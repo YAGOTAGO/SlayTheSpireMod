@@ -1,0 +1,53 @@
+{
+  "YagoMod:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "YagoMod:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL yagomod:Multiword_Keyword."
+  },
+  "YagoMod:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! yagomod:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! yagomod:Keywords."
+  },
+  "YagoMod:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "YagoMod:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "YagoMod:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X yagomod:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 yagomod:Keywords."
+  },
+  "YagoMod:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "YagoMod:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "YagoMod:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "YagoMod:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !yagomod:ENERGY_DAMAGE! damage total.)"
+  },
+  "YagoMod:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !yagomod:SecondMagic! poison to an enemy."
+  },
+  "YagoMod:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  }
+}
