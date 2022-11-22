@@ -1,15 +1,19 @@
 {
-  "YagoMod:DefaultCommonAttack": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage, Draw !M! cards. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
-  },
   "YagoMod:WickedStab": {
-    "NAME": "WickedStab",
+    "NAME": "Wicked Stab",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
   "YagoMod:SacrificialStab": {
     "NAME": "Sacrificial Stab",
     "DESCRIPTION": "Deal !D! damage. NL If Fatal, Gain !M! [E]."
+  },
+  "YagoMod:Exsanguinate": {
+    "NAME": "Exsanguinate",
+    "DESCRIPTION": "yagomod:Lifesteal !D! damage. NL Draw !M! card."
+  },
+  "YagoMod:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage, Draw !M! cards. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
   },
   "YagoMod:DefaultCommonSkill": {
     "NAME": "Defend",
@@ -48,11 +52,11 @@
   },
   "YagoMod:DefaultAttackWithVariable": {
     "NAME": "Special Strike",
-    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !yagomod:ENERGY_DAMAGE! damage total.)"
+    "DESCRIPTION": "Deal !D! damage [E] times."
   },
   "YagoMod:DefaultSecondMagicNumberSkill": {
     "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! Vulnerable and !yagomod:SecondMagic! poison to an enemy."
+    "DESCRIPTION": "Apply !M! Vulnerable and poison to an enemy."
   },
   "YagoMod:OrbSkill": {
     "NAME": "Get Orb",
