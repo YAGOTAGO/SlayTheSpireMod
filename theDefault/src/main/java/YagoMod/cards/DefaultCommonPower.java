@@ -20,7 +20,6 @@ public class DefaultCommonPower extends AbstractDynamicCard {
      * Hold Place Gain 1(2) Keywords(s).
      */
 
-
     // TEXT DECLARATION 
 
     public static final String ID = DefaultMod.makeID(DefaultCommonPower.class.getSimpleName());

@@ -160,18 +160,17 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Exsanguinate.ID);
         retVal.add(SacrificialStab.ID);
         retVal.add(DefaultRareAttack.ID);
+        retVal.add(BloodAlchemy.ID);
+        retVal.add(BloodAlchemy.ID);
 
-        retVal.add(DefaultCommonSkill.ID);
         retVal.add(DefaultUncommonSkill.ID);
         retVal.add(DefaultRareSkill.ID);
 
         retVal.add(DefaultCommonPower.ID);
         retVal.add(DefaultUncommonPower.ID);
         retVal.add(DefaultRarePower.ID);
+        retVal.add(DefaultRarePower.ID);
 
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
         return retVal;
     }
 

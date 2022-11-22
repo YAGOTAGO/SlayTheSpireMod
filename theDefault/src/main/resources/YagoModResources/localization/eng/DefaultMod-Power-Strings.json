@@ -6,5 +6,9 @@
 "YagoMod:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+},
+        "YagoMod:BloodAlchemyPower": {
+                "NAME": "Blood Alchemy",
+                "DESCRIPTIONS": ["At the start of your turn, take ", " damage and obtain ", " potion", " potions"]
+        }
 }

@@ -1,4 +1,8 @@
 {
+  "YagoMod:BloodAlchemy": {
+    "NAME": "Blood Alchemy",
+    "DESCRIPTION": "At the start of your turn, take !M! damage and gain a random potion."
+  },
   "YagoMod:WickedStab": {
     "NAME": "Wicked Stab",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
