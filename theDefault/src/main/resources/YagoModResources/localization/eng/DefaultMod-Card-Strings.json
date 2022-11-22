@@ -1,7 +1,15 @@
 {
   "YagoMod:DefaultCommonAttack": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+    "DESCRIPTION": "Deal !D! damage, Draw !M! cards. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "YagoMod:WickedStab": {
+    "NAME": "WickedStab",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "YagoMod:SacrificialStab": {
+    "NAME": "Sacrificial Stab",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, Gain !M! [E]."
   },
   "YagoMod:DefaultCommonSkill": {
     "NAME": "Defend",

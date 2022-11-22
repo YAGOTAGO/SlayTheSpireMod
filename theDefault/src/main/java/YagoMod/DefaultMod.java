@@ -86,9 +86,9 @@ public class DefaultMod implements
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
-    private static final String MODNAME = "Default Mod";
-    private static final String AUTHOR = "Gremious"; // And pretty soon - You!
-    private static final String DESCRIPTION = "A base for Slay the Spire to start your own mod from, feat. the Default.";
+    private static final String MODNAME = "Yago Mod";
+    private static final String AUTHOR = "Yago"; // And pretty soon - You!
+    private static final String DESCRIPTION = "A new class, featuring self-damage, heal, discard";
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -436,7 +436,7 @@ public class DefaultMod implements
 
         //TODO: Rename the "DefaultMod" with the modid in your ModTheSpire.json file
         //TODO: The artifact mentioned in ModTheSpire.json is the artifactId in pom.xml you should've edited earlier
-        new AutoAdd("DefaultMod") // ${project.artifactId}
+        new AutoAdd("YagoMod") // ${project.artifactId}
             .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
             .setDefaultSeen(true)
             .cards();

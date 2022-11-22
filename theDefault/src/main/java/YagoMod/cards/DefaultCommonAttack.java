@@ -3,6 +3,7 @@ package YagoMod.cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +38,7 @@ public class DefaultCommonAttack extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Attack.png");
-    // Setting the image as as easy as can possibly be now. You just need to provide the image name
+    // Setting the image as easy as can possibly be now. You just need to provide the image name
     // and make sure it's in the correct folder. That's all.
     // There's makeCardPath, makeRelicPath, power, orb, event, etc..
     // The list of all of them can be found in the main DefaultMod.java file in the
@@ -57,9 +58,11 @@ public class DefaultCommonAttack extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int COST = 2;
+    private static final int DAMAGE = 10;
+
+    private static final int DRAW = 2;
+    private static final int UPGRADE_PLUS_DMG = 5;
 
     // Hey want a second damage/magic/block/unique number??? Great!
     // Go check out DefaultAttackWithVariable and theDefault.variable.DefaultCustomVariable
@@ -85,7 +88,9 @@ public class DefaultCommonAttack extends CustomCard {
         // Aside from baseDamage/MagicNumber/Block there's also a few more.
         // Just type this.base and let intelliJ auto complete for you, or, go read up AbstractCard
 
-        baseDamage = DAMAGE;
+        this.baseDamage = DAMAGE;
+        this.baseMagicNumber = DRAW;
+        this.magicNumber = this.baseMagicNumber;
 
         this.tags.add(CardTags.STARTER_STRIKE); //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly.
         this.tags.add(CardTags.STRIKE);
@@ -106,6 +111,8 @@ public class DefaultCommonAttack extends CustomCard {
                         // I.e. i want energy gain or card draw, lemme check out Adrenaline
                         // P.s. if you want to damage ALL enemies OUTSIDE of a card, check out the custom orb.
                         AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)); // The animation the damage action uses to hit.
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+
     }
 
     // Upgraded stats.
