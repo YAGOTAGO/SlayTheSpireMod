@@ -1,4 +1,8 @@
 {
+  "YagoMod:Penance": {
+    "NAME": "Penance",
+    "DESCRIPTION": "Whenever you heal, NL Draw a card."
+  },
   "YagoMod:FlagellantParade": {
   "NAME": "Flagellant Parade",
   "DESCRIPTION": "Whenever you lose HP from a card, deal !D! damage to a random enemy."

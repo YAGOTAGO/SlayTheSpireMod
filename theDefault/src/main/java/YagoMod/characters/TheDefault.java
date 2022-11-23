@@ -164,8 +164,8 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DefaultRareAttack.ID);
         retVal.add(BloodAlchemy.ID);
         retVal.add(BloodAlchemy.ID);
-        retVal.add(FlagellantParade.ID);
-        retVal.add(FlagellantParade.ID);
+        retVal.add(Penance.ID);
+        retVal.add(Penance.ID);
         retVal.add(Bloodletting.ID);
         retVal.add(Offering.ID);
 

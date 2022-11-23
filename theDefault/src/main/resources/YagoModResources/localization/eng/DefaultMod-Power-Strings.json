@@ -14,5 +14,9 @@
         "YagoMod:FlagellantParadePower": {
                 "NAME": "Flagellant Parade",
                 "DESCRIPTIONS": ["Whenever you lose HP from a card deal ", " damage to ", " random enemy.", " random enemies."]
-        }
+        },
+        "YagoMod:Penance": {
+        "NAME": "Penance",
+        "DESCRIPTIONS": ["Whenever you heal draw ", " card.", " cards."]
+}
 }
