@@ -34,12 +34,24 @@ public class Oblation extends AbstractDynamicCard {
     public Oblation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = HEAL;
+
     }
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(DRAW));
+    }
+
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        this.cantUseMessage = "Cannot play this card.";
+        return false;
+    }
+
+    public void triggerOnManualDiscard() {
+        this.addToBot(new DrawCardAction(AbstractDungeon.player, DRAW));
+        this.addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, magicNumber));
+
     }
 
     //Upgraded stats.

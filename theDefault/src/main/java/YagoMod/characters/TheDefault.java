@@ -159,10 +159,10 @@ public class TheDefault extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(WickedStab.ID);
-        retVal.add(VampiricInstinct.ID);
+        retVal.add(ToxicChemicals.ID);
         retVal.add(SacrificialStab.ID);
         retVal.add(DefaultRareAttack.ID);
-        retVal.add(BloodyBlock.ID);
+        retVal.add(Oblation.ID);
         retVal.add(Dusk.ID);
         retVal.add(Bloodletting.ID);
         retVal.add(Offering.ID);

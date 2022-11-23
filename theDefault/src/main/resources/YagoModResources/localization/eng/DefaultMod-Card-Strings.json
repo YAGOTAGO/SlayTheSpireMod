@@ -1,4 +1,8 @@
 {
+  "YagoMod:ToxicChemicals": {
+    "NAME": "Toxic Chemicals",
+    "DESCRIPTION": "Discard 1 card. NL Obtain a common potion."
+  },
   "YagoMod:VampiricInstinct": {
     "NAME": "Vampiric Instinct",
     "DESCRIPTION": "Shuffle !M! Bite into your discard pile. Exhaust."
