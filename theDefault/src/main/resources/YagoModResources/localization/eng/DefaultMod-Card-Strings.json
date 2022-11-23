@@ -1,4 +1,8 @@
 {
+  "YagoMod:SurrenderFlesh": {
+  "NAME": "Surrender Flesh",
+  "DESCRIPTION": "Draw !M! cards. NL Lose 2 max HP."
+},
   "YagoMod:Oblation": {
   "NAME": "Oblation",
   "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, heal !M! and draw 1 card."
