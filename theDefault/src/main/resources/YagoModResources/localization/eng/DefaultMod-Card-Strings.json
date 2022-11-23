@@ -1,4 +1,8 @@
 {
+  "YagoMod:EmbraceThorns": {
+    "NAME": "Embrace Thorns",
+    "DESCRIPTION": "Lose 2 HP. NL Whenever you are attacked, deal !M! damage back."
+  },
   "YagoMod:ToxicChemicals": {
     "NAME": "Toxic Chemicals",
     "DESCRIPTION": "Discard 1 card. NL Obtain a common potion."

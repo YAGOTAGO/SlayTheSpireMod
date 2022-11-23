@@ -163,7 +163,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(SacrificialStab.ID);
         retVal.add(DefaultRareAttack.ID);
         retVal.add(Oblation.ID);
-        retVal.add(Dusk.ID);
+        retVal.add(EmbraceThorns.ID);
         retVal.add(Bloodletting.ID);
         retVal.add(Offering.ID);
 
