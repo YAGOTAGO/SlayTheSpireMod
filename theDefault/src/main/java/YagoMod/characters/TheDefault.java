@@ -162,10 +162,8 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Exsanguinate.ID);
         retVal.add(SacrificialStab.ID);
         retVal.add(DefaultRareAttack.ID);
-        retVal.add(BloodAlchemy.ID);
-        retVal.add(BloodAlchemy.ID);
-        retVal.add(Penance.ID);
-        retVal.add(Penance.ID);
+        retVal.add(BloodyBlock.ID);
+        retVal.add(Dusk.ID);
         retVal.add(Bloodletting.ID);
         retVal.add(Offering.ID);
 

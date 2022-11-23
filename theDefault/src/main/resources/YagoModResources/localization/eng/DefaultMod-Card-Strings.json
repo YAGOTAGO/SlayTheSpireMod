@@ -1,4 +1,12 @@
 {
+  "YagoMod:BloodyBlock": {
+  "NAME": "Bloody Block",
+  "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
+},
+  "YagoMod:Dusk": {
+  "NAME": "Dusk",
+  "DESCRIPTION": "Gain [E] equal to your hand size."
+},
   "YagoMod:Penance": {
     "NAME": "Penance",
     "DESCRIPTION": "Whenever you heal, NL Draw a card."
