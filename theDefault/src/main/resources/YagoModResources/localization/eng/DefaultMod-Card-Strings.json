@@ -1,4 +1,8 @@
 {
+  "YagoMod:VampiricInstinct": {
+    "NAME": "Vampiric Instinct",
+    "DESCRIPTION": "Shuffle !M! Bite into your discard pile. Exhaust."
+  },
   "YagoMod:SurrenderFlesh": {
   "NAME": "Surrender Flesh",
   "DESCRIPTION": "Draw !M! cards. NL Lose 2 max HP."
