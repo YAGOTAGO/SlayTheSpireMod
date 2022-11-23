@@ -1,4 +1,8 @@
 {
+  "YagoMod:Oblation": {
+  "NAME": "Oblation",
+  "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, heal !M! and draw 1 card."
+},
   "YagoMod:BloodyBlock": {
   "NAME": "Bloody Block",
   "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
