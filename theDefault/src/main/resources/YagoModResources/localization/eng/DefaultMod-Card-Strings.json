@@ -1,4 +1,8 @@
 {
+  "YagoMod:HallowedLight": {
+    "NAME": "Hallowed Light",
+    "DESCRIPTION": "Stun ALL monsters. NL Exhaust."
+  },
   "YagoMod:EmbraceThorns": {
     "NAME": "Embrace Thorns",
     "DESCRIPTION": "Lose 2 HP. NL Whenever you are attacked, deal !M! damage back."

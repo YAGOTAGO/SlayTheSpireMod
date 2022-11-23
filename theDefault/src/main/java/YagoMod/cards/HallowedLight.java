@@ -2,42 +2,44 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
-import com.megacrit.cardcrawl.cards.colorless.Bite;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+
 import static YagoMod.DefaultMod.makeCardPath;
 
-public class VampiricInstinct extends AbstractDynamicCard {
+public class HallowedLight extends AbstractDynamicCard {
 
     /*
-     * (1) Shuffle 2 (3) Bite into your discard pile.
+     * (3)->(2) Stun ALL monsters. Exhaust.
      */
 
-    public static final String ID = DefaultMod.makeID(VampiricInstinct.class.getSimpleName());
+    public static final String ID = DefaultMod.makeID(HallowedLight.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
-    private static final int SHUFFLE_AMOUNT = 2;
-    private static final int SHUFFLE_PLUS = 1;
+    private static final int COST = 3;
+    private static final int UPGRADE_COST = 2;
+    private static final int STUN_AMOUNT = 1;
 
-    public VampiricInstinct() {
+    public HallowedLight() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = SHUFFLE_AMOUNT;
-        this.cardsToPreview = new Bite();
         this.exhaust = true;
     }
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(this.cardsToPreview.makeStatEquivalentCopy(), magicNumber));
+
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new StunMonsterAction(mo, p, STUN_AMOUNT));
+        }
+
     }
 
     //Upgraded stats.
@@ -45,7 +47,7 @@ public class VampiricInstinct extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(SHUFFLE_PLUS);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
