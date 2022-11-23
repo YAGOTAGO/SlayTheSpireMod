@@ -1,4 +1,8 @@
 {
+  "YagoMod:FlagellantParade": {
+  "NAME": "Flagellant Parade",
+  "DESCRIPTION": "Whenever you lose HP from a card, deal !D! damage to a random enemy."
+  },
   "YagoMod:BloodAlchemy": {
     "NAME": "Blood Alchemy",
     "DESCRIPTION": "At the start of your turn, take !M! damage and gain a random potion."

@@ -9,6 +9,8 @@ import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.red.Bloodletting;
+import com.megacrit.cardcrawl.cards.red.Offering;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -162,14 +164,11 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DefaultRareAttack.ID);
         retVal.add(BloodAlchemy.ID);
         retVal.add(BloodAlchemy.ID);
+        retVal.add(FlagellantParade.ID);
+        retVal.add(FlagellantParade.ID);
+        retVal.add(Bloodletting.ID);
+        retVal.add(Offering.ID);
 
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-        retVal.add(DefaultRarePower.ID);
 
         return retVal;
     }

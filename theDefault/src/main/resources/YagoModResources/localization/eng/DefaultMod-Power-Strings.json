@@ -9,6 +9,10 @@
 },
         "YagoMod:BloodAlchemyPower": {
                 "NAME": "Blood Alchemy",
-                "DESCRIPTIONS": ["At the start of your turn, take ", " damage and obtain ", " potion", " potions"]
+                "DESCRIPTIONS": ["At the start of your turn, take ", " damage and obtain ", " potion.", " potions."]
+        },
+        "YagoMod:FlagellantParadePower": {
+                "NAME": "Flagellant Parade",
+                "DESCRIPTIONS": ["Whenever you lose HP from a card deal ", " damage to ", " random enemy.", " random enemies."]
         }
 }
