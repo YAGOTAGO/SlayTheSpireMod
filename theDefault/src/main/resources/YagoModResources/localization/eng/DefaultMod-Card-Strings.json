@@ -1,4 +1,8 @@
 {
+  "YagoMod:SelfReflection": {
+    "NAME": "Self Reflection",
+    "DESCRIPTION": "Draw 1 card. NL Add a copy of it to your hand."
+  },
   "YagoMod:MartyrFlesh": {
     "NAME": "Martyr's Flesh",
     "DESCRIPTION": "Apply 2 Vulnerable to ALL characters. NL Apply !M! Weak to ALL enemies.",

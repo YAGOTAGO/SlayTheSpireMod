@@ -66,7 +66,7 @@ public class TheDefault extends CustomPlayer {
     public static final int STARTING_HP = 75;
     public static final int MAX_HP = 75;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
+    public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
 
     // =============== /BASE STATS/ =================
@@ -167,7 +167,9 @@ public class TheDefault extends CustomPlayer {
         retVal.add(SoulBeam.ID);
         retVal.add(Inferno.ID);
         retVal.add(MartyrFlesh.ID);
-
+        retVal.add(SelfReflection.ID);
+        retVal.add(SurrenderFlesh.ID);
+        retVal.add(WickedStab.ID);
 
         return retVal;
     }

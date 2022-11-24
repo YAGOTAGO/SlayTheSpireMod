@@ -2,6 +2,7 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.actions.DesperatePrayerAction;
+import YagoMod.actions.SelfReflectionAction;
 import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,18 +10,16 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-
 import static YagoMod.DefaultMod.makeCardPath;
 
-public class DesperatePrayer extends AbstractDynamicCard {
+public class SelfReflection extends AbstractDynamicCard {
 
     /*
-     * (1) Draw a card, heal for its cost (+1).
+     * (1) Draw 1(2) card, add copy to your hand.
      */
 
-    public static final String ID = DefaultMod.makeID(DesperatePrayer.class.getSimpleName());
+    public static final String ID = DefaultMod.makeID(SelfReflection.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
-
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -28,12 +27,14 @@ public class DesperatePrayer extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DRAW_AMOUNT = 1;
+    private static final int DRAW_AMOUNT = 2;
+    private static final int DRAW_PLUS = 1;
     public static boolean WillDraw = false;
 
-    public DesperatePrayer() {
+    public SelfReflection() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        this.baseMagicNumber = DRAW_AMOUNT;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     // Actions the card should do.
@@ -48,17 +49,21 @@ public class DesperatePrayer extends AbstractDynamicCard {
         WillDraw = deckSize + discardSize != 0;
 
         //Draw action
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(DRAW_AMOUNT, new DesperatePrayerAction(p, this.upgraded), false));
+        for(int i =0; i<magicNumber; i++){
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new SelfReflectionAction(p), false));
+        }
+
     }
 
-    public AbstractCard makeCopy() {return new DesperatePrayer();}
+    public AbstractCard makeCopy() {return new SelfReflection();}
 
     //Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.rawDescription = "Draw a card. NL Heal for its cost + 1.";
+            upgradeMagicNumber(DRAW_PLUS);
+            this.rawDescription = "Draw 2 cards. NL Add copies of them to your hand.";
             initializeDescription();
         }
     }
