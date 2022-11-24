@@ -166,7 +166,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Inferno.ID);
         retVal.add(SoulBeam.ID);
         retVal.add(Inferno.ID);
-        retVal.add(Inferno.ID);
+        retVal.add(MartyrFlesh.ID);
 
 
         return retVal;

@@ -1,4 +1,9 @@
 {
+  "YagoMod:MartyrFlesh": {
+    "NAME": "Martyr's Flesh",
+    "DESCRIPTION": "Apply 2 Vulnerable to ALL characters. NL Apply !M! Weak to ALL enemies.",
+    "FLAVOR": "Will you die for the cause?"
+  },
   "YagoMod:DivineForm": {
     "NAME": "Divine Form",
     "DESCRIPTION": "Gain !M! Intangible. NL Lose 4 Max HP.",
