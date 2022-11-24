@@ -2,6 +2,7 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.colorless.Bite;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,7 +14,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 public class VampiricInstinct extends AbstractDynamicCard {
 
     /*
-     * (1) Shuffle 2 (3) Bite into your discard pile.
+     * (1) Shuffle 2 (3) Bite into your discard pile, take 3 dmg.
      */
 
     public static final String ID = DefaultMod.makeID(VampiricInstinct.class.getSimpleName());
@@ -27,17 +28,22 @@ public class VampiricInstinct extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int SHUFFLE_AMOUNT = 2;
     private static final int SHUFFLE_PLUS = 1;
+    private static final int HP_LOSS= 3;
 
     public VampiricInstinct() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = SHUFFLE_AMOUNT;
         this.cardsToPreview = new Bite();
         this.exhaust = true;
+
+        //Creates healing cards
+        this.tags.add(CardTags.HEALING);
     }
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(this.cardsToPreview.makeStatEquivalentCopy(), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, HP_LOSS));
     }
 
     //Upgraded stats.

@@ -33,7 +33,7 @@ public class DesperatePrayer extends AbstractDynamicCard {
 
     public DesperatePrayer() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-
+        this.tags.add(CardTags.HEALING);
     }
 
     // Actions the card should do.

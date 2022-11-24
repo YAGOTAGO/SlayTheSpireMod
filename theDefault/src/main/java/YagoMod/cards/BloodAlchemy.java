@@ -47,6 +47,9 @@ public class BloodAlchemy extends AbstractDynamicCard {
     public BloodAlchemy() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+
+        //Because can generate healing potions
+        this.tags.add(CardTags.HEALING);
     }
 
     // Actions the card should do.

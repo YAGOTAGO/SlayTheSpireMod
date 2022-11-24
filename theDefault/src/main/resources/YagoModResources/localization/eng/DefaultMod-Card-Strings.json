@@ -41,7 +41,7 @@
   },
   "YagoMod:VampiricInstinct": {
     "NAME": "Vampiric Instinct",
-    "DESCRIPTION": "Shuffle !M! Bite into your discard pile. Exhaust."
+    "DESCRIPTION": "Shuffle !M! Bite into your discard pile. Lose 3 HP. NL Exhaust."
   },
   "YagoMod:SurrenderFlesh": {
   "NAME": "Surrender Flesh",

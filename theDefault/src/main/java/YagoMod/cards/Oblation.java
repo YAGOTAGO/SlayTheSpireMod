@@ -32,7 +32,7 @@ public class Oblation extends AbstractDynamicCard {
     public Oblation() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = HEAL;
-
+        this.tags.add(CardTags.HEALING);
     }
     // Actions the card should do.
     @Override

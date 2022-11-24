@@ -41,6 +41,8 @@ public class Exsanguinate extends AbstractDynamicCard {
         baseDamage = DAMAGE;
         baseMagicNumber = DRAW_AMOUNT;
         magicNumber = baseMagicNumber;
+        this.tags.add(CardTags.HEALING);
+
     }
 
 
