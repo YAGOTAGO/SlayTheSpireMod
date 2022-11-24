@@ -1,4 +1,9 @@
 {
+  "YagoMod:DivineForm": {
+    "NAME": "Divine Form",
+    "DESCRIPTION": "Gain !M! Intangible. NL Lose 4 Max HP.",
+    "FLAVOR": "All divinity requires sacrifice."
+  },
   "YagoMod:SoulBeam": {
     "NAME": "Soul Beam",
     "DESCRIPTION": "Deal !D! damage to all enemies. NL Lose !M! Max HP.",

@@ -158,7 +158,7 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(DesperatePrayer.ID);
+        retVal.add(DivineForm.ID);
         retVal.add(ToxicChemicals.ID);
         retVal.add(ToxicChemicals.ID);
         retVal.add(DefaultRareAttack.ID);
