@@ -163,7 +163,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(ToxicChemicals.ID);
         retVal.add(DefaultRareAttack.ID);
         retVal.add(Oblation.ID);
-        retVal.add(Inferno.ID);
+        retVal.add(DesperatePrayer.ID);
         retVal.add(SoulBeam.ID);
         retVal.add(Inferno.ID);
         retVal.add(MartyrFlesh.ID);
