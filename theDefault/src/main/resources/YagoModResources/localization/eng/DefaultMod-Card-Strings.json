@@ -1,4 +1,9 @@
 {
+  "YagoMod:SoulBeam": {
+    "NAME": "Soul Beam",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Lose !M! Max HP.",
+    "FLAVOR": "Soul not included."
+  },
   "YagoMod:Inferno": {
     "NAME": "Inferno",
     "DESCRIPTION": "Unplayable. NL If this card is discarded, deal !D! damage to all enemies. Increase the damage of ALL Inferno cards by !M! this combat."

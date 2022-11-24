@@ -164,7 +164,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DefaultRareAttack.ID);
         retVal.add(Oblation.ID);
         retVal.add(Inferno.ID);
-        retVal.add(Bloodletting.ID);
+        retVal.add(SoulBeam.ID);
         retVal.add(Inferno.ID);
         retVal.add(Inferno.ID);
 

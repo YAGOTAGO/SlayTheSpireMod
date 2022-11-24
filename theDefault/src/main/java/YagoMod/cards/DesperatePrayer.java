@@ -42,12 +42,17 @@ public class DesperatePrayer extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         int originalDrawnSize = DrawCardAction.drawnCards.size();
-        logger.info(originalDrawnSize);
+
+        for(int i =0; i<originalDrawnSize; i++){
+            logger.info(DrawCardAction.drawnCards.get(i).name);
+        }
 
         //Draw action
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(DRAW_AMOUNT));
 
-        logger.info(DrawCardAction.drawnCards.size());
+        for(int i =0; i<originalDrawnSize; i++){
+            logger.info(DrawCardAction.drawnCards.get(i).name);
+        }
 
         //if not same size then draw happened
         if(originalDrawnSize != DrawCardAction.drawnCards.size()){
