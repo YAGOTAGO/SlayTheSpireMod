@@ -1,11 +1,20 @@
 {
+  "YagoMod:Inferno": {
+    "NAME": "Inferno",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded, deal !D! damage to all enemies. Increase the damage of ALL Inferno cards by !M! this combat."
+  },
+  "YagoMod:DesperatePrayer": {
+    "NAME": "Desperate Prayer",
+    "DESCRIPTION": "Draw a card. NL Heal for its cost."
+  },
   "YagoMod:HallowedLight": {
     "NAME": "Hallowed Light",
     "DESCRIPTION": "Stun ALL monsters. NL Exhaust."
   },
   "YagoMod:EmbraceThorns": {
     "NAME": "Embrace Thorns",
-    "DESCRIPTION": "Lose 2 HP. NL Whenever you are attacked, deal !M! damage back."
+    "DESCRIPTION": "Lose 2 HP. NL Whenever you are attacked, deal !M! damage back.",
+    "FLAVOR": "It's a real thorn on my side."
   },
   "YagoMod:ToxicChemicals": {
     "NAME": "Toxic Chemicals",

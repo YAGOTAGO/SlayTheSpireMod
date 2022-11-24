@@ -158,14 +158,15 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(WickedStab.ID);
+        retVal.add(DesperatePrayer.ID);
         retVal.add(ToxicChemicals.ID);
-        retVal.add(SacrificialStab.ID);
+        retVal.add(ToxicChemicals.ID);
         retVal.add(DefaultRareAttack.ID);
         retVal.add(Oblation.ID);
-        retVal.add(HallowedLight.ID);
+        retVal.add(Inferno.ID);
         retVal.add(Bloodletting.ID);
-        retVal.add(Offering.ID);
+        retVal.add(Inferno.ID);
+        retVal.add(Inferno.ID);
 
 
         return retVal;
