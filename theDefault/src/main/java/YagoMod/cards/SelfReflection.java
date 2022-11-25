@@ -27,7 +27,7 @@ public class SelfReflection extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DRAW_AMOUNT = 2;
+    private static final int DRAW_AMOUNT = 1;
     private static final int DRAW_PLUS = 1;
     public static boolean WillDraw = false;
 

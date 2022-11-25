@@ -31,7 +31,8 @@ public class SelfReflectionAction extends AbstractGameAction {
             AbstractCard c = drawnCards.get(drawnCards.size()-1);
 
             //Add copy of it to the hand
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c.makeStatEquivalentCopy()));
+            //ADD to top because same as Dual wield
+            AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(c.makeStatEquivalentCopy()));
         }
 
         this.isDone = true;

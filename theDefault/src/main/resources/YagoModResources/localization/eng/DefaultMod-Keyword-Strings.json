@@ -23,5 +23,12 @@
       "lifesteal"
     ],
     "DESCRIPTION": "Heal for unblocked damage done by this card."
+  },
+  {
+    "NAMES": [
+      "Stun",
+      "stun"
+    ],
+    "DESCRIPTION": "Stunned characters lose their turn."
   }
 ]

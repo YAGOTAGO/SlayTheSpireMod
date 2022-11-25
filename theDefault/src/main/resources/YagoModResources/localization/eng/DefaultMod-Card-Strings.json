@@ -1,4 +1,8 @@
 {
+  "YagoMod:HallOfMirrors": {
+    "NAME": "Hall of Mirrors",
+    "DESCRIPTION": "Duplicate your hand. NL Exhaust."
+  },
   "YagoMod:SelfReflection": {
     "NAME": "Self Reflection",
     "DESCRIPTION": "Draw 1 card. NL Add a copy of it to your hand."

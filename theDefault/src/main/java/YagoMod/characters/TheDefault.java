@@ -160,7 +160,6 @@ public class TheDefault extends CustomPlayer {
 
         retVal.add(DivineForm.ID);
         retVal.add(ToxicChemicals.ID);
-        retVal.add(ToxicChemicals.ID);
         retVal.add(DefaultRareAttack.ID);
         retVal.add(Oblation.ID);
         retVal.add(DesperatePrayer.ID);
@@ -168,8 +167,10 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Inferno.ID);
         retVal.add(MartyrFlesh.ID);
         retVal.add(SelfReflection.ID);
-        retVal.add(SurrenderFlesh.ID);
+        retVal.add(HallOfMirrors.ID);
         retVal.add(WickedStab.ID);
+        retVal.add(Offering.ID);
+        retVal.add(Offering.ID);
 
         return retVal;
     }

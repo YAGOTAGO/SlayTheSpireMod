@@ -49,7 +49,7 @@ public class EmbraceThorns extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(PLUS_THORNS);
+            upgradeDamage(PLUS_THORNS);
             initializeDescription();
         }
     }
