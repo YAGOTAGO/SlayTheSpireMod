@@ -1,7 +1,11 @@
 {
+  "YagoMod:FlagellantWhip": {
+    "NAME": "Flagellant's Whip",
+    "DESCRIPTION": "Deal !D! damage. NL Can only be played if you took damage this turn."
+  },
   "YagoMod:Repent": {
     "NAME": "Repent",
-    "DESCRIPTION": "Deal !D! damage. NL Remove ALL Debuffs."
+    "DESCRIPTION": "Deal !D! damage. NL Remove all Debuffs."
   },
   "YagoMod:ScarredSkin": {
     "NAME": "Scarred Skin",
