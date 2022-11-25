@@ -27,7 +27,7 @@ public class SelfReflection extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DRAW_AMOUNT = 1;
+    private static final int DRAW_AMOUNT = 2;
     private static final int DRAW_PLUS = 1;
     public static boolean WillDraw = false;
 
@@ -42,8 +42,8 @@ public class SelfReflection extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         //before we draw we do a check
-        int deckSize = AbstractDungeon.player.drawPile.size();
-        int discardSize = AbstractDungeon.player.discardPile.size();
+        int deckSize = p.drawPile.size();
+        int discardSize = p.discardPile.size();
 
         //true if deck and discard isn't 0
         WillDraw = deckSize + discardSize != 0;

@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import java.util.ArrayList;
 public class SelfReflectionAction extends AbstractGameAction {
 
     AbstractPlayer player;
-
     public SelfReflectionAction(AbstractPlayer p){
         this.player = p;
     }
@@ -23,10 +21,11 @@ public class SelfReflectionAction extends AbstractGameAction {
     public void update() {
         ArrayList<AbstractCard> drawnCards = DrawCardAction.drawnCards;
 
-        //WARNING
-        //
-        // MIGHT NEED A CHECK OF HANDSIZE HERE
-        if(SelfReflection.WillDraw){
+        int handSize = player.hand.size();
+
+        // If can draw and have space in hand
+        if(SelfReflection.WillDraw & handSize<10){
+
             //Get card that was drawn
             AbstractCard c = drawnCards.get(drawnCards.size()-1);
 
