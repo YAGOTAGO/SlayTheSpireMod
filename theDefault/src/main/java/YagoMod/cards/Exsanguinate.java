@@ -45,7 +45,6 @@ public class Exsanguinate extends AbstractDynamicCard {
 
     }
 
-
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 

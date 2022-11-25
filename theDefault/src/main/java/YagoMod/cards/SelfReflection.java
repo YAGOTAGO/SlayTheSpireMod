@@ -1,13 +1,14 @@
 package YagoMod.cards;
 
 import YagoMod.DefaultMod;
-import YagoMod.actions.DesperatePrayerAction;
 import YagoMod.actions.SelfReflectionAction;
 import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static YagoMod.DefaultMod.makeCardPath;
@@ -20,7 +21,8 @@ public class SelfReflection extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(SelfReflection.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
-
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
@@ -63,7 +65,7 @@ public class SelfReflection extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(DRAW_PLUS);
-            this.rawDescription = "Draw 2 cards. NL Add copies of them to your hand.";
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

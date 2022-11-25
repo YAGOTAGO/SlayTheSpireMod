@@ -9,7 +9,6 @@ import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.Bloodletting;
 import com.megacrit.cardcrawl.cards.red.Offering;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -165,7 +164,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DesperatePrayer.ID);
         retVal.add(SoulBeam.ID);
         retVal.add(Inferno.ID);
-        retVal.add(MartyrFlesh.ID);
+        retVal.add(Dusk.ID);
         retVal.add(SelfReflection.ID);
         retVal.add(HallOfMirrors.ID);
         retVal.add(WickedStab.ID);

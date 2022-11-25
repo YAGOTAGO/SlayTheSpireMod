@@ -5,7 +5,8 @@
   },
   "YagoMod:SelfReflection": {
     "NAME": "Self Reflection",
-    "DESCRIPTION": "Draw 1 card. NL Add a copy of it to your hand."
+    "DESCRIPTION": "Draw 1 card. NL Add a copy of it to your hand.",
+    "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Add copies of them to your hand."
   },
   "YagoMod:MartyrFlesh": {
     "NAME": "Martyr's Flesh",
@@ -32,7 +33,7 @@
   },
   "YagoMod:HallowedLight": {
     "NAME": "Hallowed Light",
-    "DESCRIPTION": "Stun ALL monsters. NL Exhaust."
+    "DESCRIPTION": "yagomod:Stun ALL monsters. NL Exhaust."
   },
   "YagoMod:EmbraceThorns": {
     "NAME": "Embrace Thorns",
@@ -61,7 +62,8 @@
 },
   "YagoMod:Dusk": {
   "NAME": "Dusk",
-  "DESCRIPTION": "Gain [E] equal to your hand size."
+  "DESCRIPTION": "Gain [E] equal to your hand size. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] equal to your hand size + 1. NL Exhaust."
 },
   "YagoMod:Penance": {
     "NAME": "Penance",
