@@ -51,11 +51,6 @@ public class SoulBeam extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        //Beam damage
-        AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-
         //Max health loss
         if (Settings.FAST_MODE) {
             this.addToBot(new VFXAction(new OfferingEffect(), 0.1F));
@@ -63,6 +58,13 @@ public class SoulBeam extends AbstractDynamicCard {
             this.addToBot(new VFXAction(new OfferingEffect(), 0.5F));
         }
         AbstractDungeon.player.decreaseMaxHealth(MAX_HP_LOSS);
+
+        //Beam damage
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+
+
 
     }
 

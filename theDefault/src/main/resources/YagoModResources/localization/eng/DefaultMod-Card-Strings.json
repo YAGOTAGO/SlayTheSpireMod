@@ -1,4 +1,8 @@
 {
+  "YagoMod:Repent": {
+    "NAME": "Repent",
+    "DESCRIPTION": "Deal !D! damage. NL Remove ALL Debuffs."
+  },
   "YagoMod:ScarredSkin": {
     "NAME": "Scarred Skin",
     "DESCRIPTION": "Gain Block equal to the damage you received this turn.",

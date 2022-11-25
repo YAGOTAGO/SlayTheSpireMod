@@ -44,6 +44,7 @@ public class ScarredSkin extends AbstractDynamicCard {
         }else{
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, 2* damageTakenThisTurn));
         }
+
     }
 
     public AbstractCard makeCopy() {return new ScarredSkin();}
