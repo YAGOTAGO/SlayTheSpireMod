@@ -1,4 +1,9 @@
 {
+  "YagoMod:ScarredSkin": {
+    "NAME": "Scarred Skin",
+    "DESCRIPTION": "Gain Block equal to the damage you received this turn.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to double the damage you received this turn."
+  },
   "YagoMod:Devotion": {
   "NAME": "Devotion",
   "DESCRIPTION": "Discard up to !M! cards from hand. NL Heal 1 for each card discarded this way."

@@ -1,6 +1,7 @@
 package YagoMod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,6 +37,7 @@ public class DevotionAction extends AbstractGameAction {
             if (AbstractDungeon.handCardSelectScreen.selectedCards.group.size() > 0) {
                 for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
                     player.hand.moveToDiscardPile(c);
+                    c.triggerOnManualDiscard();
                 }
                 //heal for amount of cards dicarded
                 AbstractDungeon.actionManager.addToBottom(new HealAction(player, player, AbstractDungeon.handCardSelectScreen.selectedCards.group.size()));
