@@ -1,4 +1,8 @@
 {
+  "YagoMod:Devotion": {
+  "NAME": "Devotion",
+  "DESCRIPTION": "Discard up to !M! cards from hand. NL Heal 1 for each card discarded this way."
+},
   "YagoMod:FrighteningShout": {
     "NAME": "Frightening Shout",
     "DESCRIPTION": "Apply !M! Weak. NL Gain !B! Block."
