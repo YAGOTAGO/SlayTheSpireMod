@@ -12,9 +12,12 @@ import org.apache.logging.log4j.Logger;
 public class ThreeTenetsAction extends AbstractGameAction {
 
     public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
-    public ThreeTenetsAction() {
+    private boolean upgraded;
+
+    public ThreeTenetsAction(boolean upgraded) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
+        this.upgraded =upgraded;
 
     }
 
@@ -28,11 +31,11 @@ public class ThreeTenetsAction extends AbstractGameAction {
             logger.info("Last played card type is: "+cardType);
             logger.info("Last played card: "+AbstractDungeon.actionManager.cardsPlayedThisTurn.get(AbstractDungeon.actionManager.cardsPlayedThisTurn.size() - 2).name);
             if(cardType == AbstractCard.CardType.ATTACK){
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.RED));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.RED, upgraded));
             } else if (cardType == AbstractCard.CardType.SKILL) {
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.GREEN));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.GREEN, upgraded));
             }else if (cardType == AbstractCard.CardType.POWER) {
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.BLUE));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.BLUE, upgraded));
             }
         }
         this.isDone = true;

@@ -3,7 +3,7 @@ package YagoMod.cards;
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,16 +11,15 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static YagoMod.DefaultMod.makeCardPath;
 
-public class Repent extends AbstractDynamicCard {
+public class SinnersBlood extends AbstractDynamicCard {
     /*
-     * (2): Deal 15 (20) damage. Remove all Debuffs.
+     * (1): Deal 0 damage 4(5) times. NL Damage is equal to damage taken this turn.
      */
 
-    public static final String ID = DefaultMod.makeID(Repent.class.getSimpleName());
+    public static final String ID = DefaultMod.makeID(SinnersBlood.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
@@ -28,32 +27,42 @@ public class Repent extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
-    private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int COST = 1;
+    private static final int DAMAGE = 0;
+    private static final int NUM_TIMES = 4;
+    private static final int NUM_TIMES_PLUS = 1;
 
-    public Repent() {
+    public SinnersBlood() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = DAMAGE;
+
+        this.baseMagicNumber = NUM_TIMES;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
-        AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
+        for(int i =0; i<magicNumber; i++){
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        }
 
     }
 
-    public AbstractCard makeCopy() {return new Repent();}
+    @Override
+    public void tookDamage() {
+        this.baseDamage = GameActionManager.damageReceivedThisTurn;
+    }
+
+    public AbstractCard makeCopy() {return new SinnersBlood();}
 
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(NUM_TIMES_PLUS);
             initializeDescription();
         }
     }

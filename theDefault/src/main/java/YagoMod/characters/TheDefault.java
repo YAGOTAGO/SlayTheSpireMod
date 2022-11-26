@@ -165,7 +165,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DesperatePrayer.ID);
         retVal.add(ThreeTenets.ID);
         retVal.add(Gash.ID);
-        retVal.add(FlagellantWhip.ID);
+        retVal.add(SinnersBlood.ID);
         retVal.add(SelfReflection.ID);
         retVal.add(Inferno.ID);
         retVal.add(WickedStab.ID);

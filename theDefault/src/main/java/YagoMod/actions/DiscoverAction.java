@@ -1,6 +1,6 @@
 package YagoMod.actions;
 
-import YagoMod.DefaultMod;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -9,8 +9,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import java.util.ArrayList;
 
@@ -19,14 +18,14 @@ import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.cardRandomRng;
 
 
 public class DiscoverAction extends AbstractGameAction {
-    public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
     private boolean retrieveCard = false;
     private ArrayList<AbstractCard> cardOptions;
-
-    public DiscoverAction(AbstractCard.CardColor cardColor) {
+    private boolean upgraded;
+    public DiscoverAction(AbstractCard.CardColor cardColor, boolean upgraded) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.amount = 1;
+        this.upgraded = upgraded;
 
         //Add all cards from that color to card pool
         ArrayList<AbstractCard> cardPool = new ArrayList();
@@ -39,8 +38,6 @@ public class DiscoverAction extends AbstractGameAction {
     @Override
     public void update() {
 
-        logger.info("inside update of Discover action");
-
         if (this.duration == Settings.ACTION_DUR_FAST) {
             AbstractDungeon.cardRewardScreen.customCombatOpen(cardOptions, CardRewardScreen.TEXT[1], true);
             this.tickDuration();
@@ -52,7 +49,11 @@ public class DiscoverAction extends AbstractGameAction {
                         disCard.upgrade();
                     }
 
-                    disCard.setCostForTurn(0);
+                    //if upgraded sets cost to 0 this turn
+                    if(upgraded){
+                        disCard.setCostForTurn(0);
+                    }
+
 
                     disCard.current_x = -1000.0F * Settings.xScale;
 
@@ -74,6 +75,7 @@ public class DiscoverAction extends AbstractGameAction {
     }
 
 
+    //Returns a list with 3 cards picked randomly from input list
     private ArrayList<AbstractCard> GenerateRandomCards(ArrayList<AbstractCard> totalCards){
         ArrayList<AbstractCard> result = new ArrayList();
         boolean dupe = false;
