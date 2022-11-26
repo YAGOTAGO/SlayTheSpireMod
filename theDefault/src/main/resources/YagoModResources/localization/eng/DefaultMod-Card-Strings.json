@@ -1,4 +1,8 @@
 {
+  "YagoMod:PunishmentsSolace": {
+  "NAME": "Punishments Solace",
+  "DESCRIPTION": "Deal !D! damage. NL Whenever you take damage return this from your discard pile to your Hand."
+},
   "YagoMod:SinnersBlood": {
     "NAME": "Sinner's Blood",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Damage increases with damage taken this turn."
