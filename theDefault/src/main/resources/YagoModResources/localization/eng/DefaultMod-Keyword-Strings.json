@@ -30,5 +30,12 @@
       "stun"
     ],
     "DESCRIPTION": "Stunned characters lose their turn."
+  },
+  {
+    "NAMES": [
+      "Discover",
+      "discover"
+    ],
+    "DESCRIPTION": "Choose 1 of 3 random cards to add to your hand. Will not show healing cards."
   }
 ]

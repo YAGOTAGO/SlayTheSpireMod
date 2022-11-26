@@ -159,7 +159,7 @@ public class TheDefault extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(Repent.ID);
-        retVal.add(ScarredSkin.ID);
+        retVal.add(NoCreed.ID);
         retVal.add(Devotion.ID);
         retVal.add(Oblation.ID);
         retVal.add(DesperatePrayer.ID);
@@ -167,7 +167,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Gash.ID);
         retVal.add(FlagellantWhip.ID);
         retVal.add(SelfReflection.ID);
-        retVal.add(HallOfMirrors.ID);
+        retVal.add(Inferno.ID);
         retVal.add(WickedStab.ID);
         retVal.add(Offering.ID);
         retVal.add(Offering.ID);

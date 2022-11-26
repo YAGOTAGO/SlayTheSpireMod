@@ -1,4 +1,8 @@
 {
+  "YagoMod:NoCreed": {
+    "NAME": "No Creed",
+    "DESCRIPTION": "Discard 1 card. NL yagomod:Discover a card of the same type, it cost 0 this turn. NL Exhaust."
+  },
   "YagoMod:Gash": {
     "NAME": "Gash",
     "DESCRIPTION": "Unplayable. NL When drawn lose 2 HP. NL Ethereal."
