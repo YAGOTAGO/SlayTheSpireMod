@@ -1,4 +1,8 @@
 {
+  "YagoMod:ThreeTenets": {
+    "NAME": "Three Tenets",
+    "DESCRIPTION": "yagomod:Discover a card. NL Card color is based on previously played card. Attack red, Power blue, Skill green."
+  },
   "YagoMod:NoCreed": {
     "NAME": "No Creed",
     "DESCRIPTION": "Discard 1 card. NL yagomod:Discover a card of the same type, it cost 0 this turn. NL Exhaust."
