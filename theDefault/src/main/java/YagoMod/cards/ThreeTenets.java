@@ -36,23 +36,22 @@ public class ThreeTenets extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(new ThreeTenetsAction());
     }
 
-//    //will glow after a card is played
-//    public void triggerOnGlowCheck() {
-//
-//        //Must have a card played before
-//        if (AbstractDungeon.actionManager.cardsPlayedThisCombat.size()>1){
-//
-//            AbstractCard.CardType type = AbstractDungeon.actionManager.cardsPlayedThisCombat.get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 2).type;
-//
-//            //type may not be status or curse
-//            if(type != CardType.STATUS && type != CardType.CURSE){
-//                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-//            }
-//
-//        }else{
-//            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-//        }
-//    }
+    //will glow after a card is played
+    public void triggerOnGlowCheck() {
+
+        //Must have a card played before
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size()>1){
+
+            AbstractCard.CardType type = AbstractDungeon.actionManager.cardsPlayedThisTurn.get(AbstractDungeon.actionManager.cardsPlayedThisTurn.size() - 2).type;
+
+            //type may not be status or curse
+            if(type != CardType.STATUS && type != CardType.CURSE){
+                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+            }
+        }else{
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
 
     public AbstractCard makeCopy() {return new ThreeTenets();}
 

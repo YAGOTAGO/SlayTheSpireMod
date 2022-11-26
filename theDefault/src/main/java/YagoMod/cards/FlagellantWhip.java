@@ -52,7 +52,7 @@ public class FlagellantWhip extends AbstractDynamicCard {
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         this.cantUseMessage = "Must take damage before playing this card.";
-        return GameActionManager.damageReceivedThisCombat > 0;
+        return GameActionManager.damageReceivedThisTurn > 0;
     }
 
 
