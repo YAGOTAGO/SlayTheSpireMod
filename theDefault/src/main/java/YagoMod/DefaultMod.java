@@ -1,5 +1,6 @@
 package YagoMod;
 
+import YagoMod.status.Gash;
 import basemod.*;
 import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
@@ -440,6 +441,9 @@ public class DefaultMod implements
             .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
             .setDefaultSeen(true)
             .cards();
+
+        //add curse card
+        BaseMod.addCard(new Gash());
 
         // .setDefaultSeen(true) unlocks the cards
         // This is so that they are all "seen" in the library,

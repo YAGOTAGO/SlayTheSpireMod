@@ -2,6 +2,7 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,7 +38,7 @@ public class ScarredSkin extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int damageTakenThisTurn = AbstractDungeon.actionManager.damageReceivedThisTurn;
+        int damageTakenThisTurn = GameActionManager.damageReceivedThisTurn;
 
         if(!upgraded){
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, damageTakenThisTurn));

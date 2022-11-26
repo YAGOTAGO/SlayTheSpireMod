@@ -1,5 +1,6 @@
 package YagoMod.characters;
 
+import YagoMod.status.Gash;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
@@ -163,7 +164,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Oblation.ID);
         retVal.add(DesperatePrayer.ID);
         retVal.add(SoulBeam.ID);
-        retVal.add(Inferno.ID);
+        retVal.add(Gash.ID);
         retVal.add(FlagellantWhip.ID);
         retVal.add(SelfReflection.ID);
         retVal.add(HallOfMirrors.ID);
