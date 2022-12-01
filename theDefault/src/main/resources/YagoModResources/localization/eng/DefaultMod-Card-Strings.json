@@ -1,4 +1,8 @@
 {
+  "YagoMod:RighteousCause": {
+    "NAME": "Righteous Cause",
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 card."
+  },
   "YagoMod:FairyBrew": {
     "NAME": "Fairy Brew",
     "DESCRIPTION": "Obtain a Fairy in a Bottle Potion. NL Reduce the cost of this card by 1 when discarded. NL Exhaust."
