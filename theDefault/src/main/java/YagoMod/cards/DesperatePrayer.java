@@ -19,7 +19,7 @@ public class DesperatePrayer extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(DesperatePrayer.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("DesperatePrayer.png");
 
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

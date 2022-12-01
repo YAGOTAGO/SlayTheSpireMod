@@ -1,6 +1,6 @@
 package YagoMod.characters;
 
-import YagoMod.status.Gash;
+
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
@@ -159,16 +159,16 @@ public class TheDefault extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(Repent.ID);
-        retVal.add(NoCreed.ID);
+        retVal.add(Inferno.ID);
         retVal.add(Devotion.ID);
         retVal.add(Oblation.ID);
         retVal.add(DesperatePrayer.ID);
         retVal.add(ThreeTenets.ID);
-        retVal.add(Gash.ID);
+        retVal.add(DesecratingBlow.ID);
         retVal.add(SinnersBlood.ID);
         retVal.add(SelfReflection.ID);
         retVal.add(RighteousCause.ID);
-        retVal.add(WickedStab.ID);
+        retVal.add(BloodAlchemy.ID);
         retVal.add(Offering.ID);
         retVal.add(Offering.ID);
 

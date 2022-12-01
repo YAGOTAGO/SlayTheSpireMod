@@ -1,4 +1,8 @@
 {
+  "YagoMod:DesecratingBlow": {
+    "NAME": "Desecrating Blow",
+    "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage. NL Increase damage taken by 2."
+  },
   "YagoMod:RighteousCause": {
     "NAME": "Righteous Cause",
     "DESCRIPTION": "Deal !D! damage. NL Discard 1 card."

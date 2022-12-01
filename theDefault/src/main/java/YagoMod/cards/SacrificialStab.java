@@ -19,17 +19,16 @@ public class SacrificialStab extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(SacrificialStab.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("SacrificialStab.jpg");// "public static final String IMG = makeCardPath("${NAME}.png");
 
 
-    // STAT DECLARATION
-    private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
-    private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
-    private static final CardType TYPE = CardType.ATTACK;       //
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;  // COST = ${COST}
-    private static final int DAMAGE = 12;    // DAMAGE = ${DAMAGE}
+    private static final int COST = 2;
+    private static final int DAMAGE = 12;
 
     private static final int ENERGY = 2;
 

@@ -20,7 +20,7 @@ public class SelfReflection extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(SelfReflection.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("SelfReflection.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

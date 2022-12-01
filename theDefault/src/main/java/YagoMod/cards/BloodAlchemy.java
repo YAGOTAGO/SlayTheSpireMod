@@ -4,7 +4,6 @@ import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
 import YagoMod.powers.BloodAlchemyPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -21,7 +20,7 @@ public class BloodAlchemy extends AbstractDynamicCard {
 
     // TEXT DECLARATION
     public static final String ID = DefaultMod.makeID(BloodAlchemy.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("BloodAlchemy.jpg");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
