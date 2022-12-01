@@ -17,9 +17,8 @@ public class BloodyBlock extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(BloodyBlock.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("BloodyBlock.png");
 
-    // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

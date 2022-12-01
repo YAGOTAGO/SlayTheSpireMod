@@ -24,7 +24,7 @@ public class MartyrFlesh extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(MartyrFlesh.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Martyr.png");
 
     // STAT DECLARATION
     private static final CardRarity RARITY = CardRarity.COMMON;

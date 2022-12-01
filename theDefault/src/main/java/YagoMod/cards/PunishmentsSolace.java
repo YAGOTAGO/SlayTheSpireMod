@@ -19,7 +19,7 @@ public class PunishmentsSolace extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(PunishmentsSolace.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("PunishmentsSolace.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

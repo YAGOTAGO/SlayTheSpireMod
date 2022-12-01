@@ -1,4 +1,9 @@
 {
+  "YagoMod:LostLibrary": {
+    "NAME": "Lost Library",
+    "DESCRIPTION": "Gain Block equal to your hand size.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to your hand size + 3"
+  },
   "YagoMod:DesecratingBlow": {
     "NAME": "Desecrating Blow",
     "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage. NL Increase damage taken by 2."
@@ -63,7 +68,7 @@
     "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Add copies of them to your hand."
   },
   "YagoMod:MartyrFlesh": {
-    "NAME": "Martyr's Flesh",
+    "NAME": "Martyr",
     "DESCRIPTION": "Apply 2 Vulnerable to ALL characters. NL Apply !M! Weak to ALL enemies.",
     "FLAVOR": "Will you die for the cause?"
   },

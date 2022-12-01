@@ -19,7 +19,7 @@ public class SurrenderFlesh extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(SurrenderFlesh.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("SurrenderFlesh.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

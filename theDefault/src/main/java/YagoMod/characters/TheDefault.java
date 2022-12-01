@@ -160,7 +160,7 @@ public class TheDefault extends CustomPlayer {
 
         retVal.add(Repent.ID);
         retVal.add(Inferno.ID);
-        retVal.add(Devotion.ID);
+        retVal.add(LostLibrary.ID);
         retVal.add(Oblation.ID);
         retVal.add(DesperatePrayer.ID);
         retVal.add(ThreeTenets.ID);
