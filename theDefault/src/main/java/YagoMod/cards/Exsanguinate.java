@@ -21,22 +21,22 @@ public class Exsanguinate extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(Exsanguinate.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Exsanguinate.jpg");// "public static final String IMG = makeCardPath("${NAME}.png");
 
     // STAT DECLARATION
-    private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
-    private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
-    private static final CardType TYPE = CardType.ATTACK;       //
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;  // COST = ${COST}
-    private static final int DAMAGE = 6;    // DAMAGE = ${DAMAGE}
+    private static final int COST = 1;
+    private static final int DAMAGE = 6;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int DRAW_AMOUNT = 1;
 
     // /STAT DECLARATION/
 
-    public Exsanguinate() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
+    public Exsanguinate() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = DRAW_AMOUNT;

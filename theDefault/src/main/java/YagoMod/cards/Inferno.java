@@ -22,7 +22,7 @@ public class Inferno extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(Inferno.class.getSimpleName());
-    public static final String IMG = makeCardPath("InfernoArt.jpg");
+    public static final String IMG = makeCardPath("Inferno.jpg");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

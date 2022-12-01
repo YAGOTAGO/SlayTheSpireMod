@@ -15,31 +15,28 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static YagoMod.DefaultMod.makeCardPath;
 
-// public class ${NAME} extends AbstractDynamicCard
+
 public class WickedStab extends AbstractDynamicCard {
     /*
      * (1): Deal 8(10) damage. Apply 1(2) weak.
      */
 
-    public static final String ID = DefaultMod.makeID(WickedStab.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    public static final String ID = DefaultMod.makeID(WickedStab.class.getSimpleName());
+    public static final String IMG = makeCardPath("WickedStab.jpg");
 
-    // STAT DECLARATION
-    private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
-    private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
-    private static final CardType TYPE = CardType.ATTACK;       //
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;  // COST = ${COST}
-    private static final int DAMAGE = 8;    // DAMAGE = ${DAMAGE}
+    private static final int COST = 1;
+    private static final int DAMAGE = 8;
     private static final int WEAK = 1;
     private static final int WEAK_PLUS = 1;
-    private static final int UPGRADE_PLUS_DMG = 2;  // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
-
-    // /STAT DECLARATION/
+    private static final int UPGRADE_PLUS_DMG = 2;
 
 
-    public WickedStab() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
+    public WickedStab() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = DAMAGE;
         this.baseMagicNumber = WEAK;
@@ -47,7 +44,6 @@ public class WickedStab extends AbstractDynamicCard {
     }
 
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 

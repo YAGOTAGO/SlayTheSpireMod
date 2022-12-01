@@ -17,7 +17,7 @@ public class NoCreed extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(NoCreed.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("NoCreed.jpg");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
