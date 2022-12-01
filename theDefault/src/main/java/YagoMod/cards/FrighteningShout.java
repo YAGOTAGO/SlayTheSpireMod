@@ -22,7 +22,7 @@ public class FrighteningShout extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(FrighteningShout.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("FrighteningShout.png");
 
     // STAT DECLARATION
     private static final CardRarity RARITY = CardRarity.COMMON;

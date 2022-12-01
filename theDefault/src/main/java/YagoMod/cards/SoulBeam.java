@@ -24,7 +24,7 @@ public class SoulBeam extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(SoulBeam.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("SoulStrike.png");// "public static final String IMG = makeCardPath("${NAME}.png");
 
     // STAT DECLARATION
     private static final CardRarity RARITY = CardRarity.RARE;

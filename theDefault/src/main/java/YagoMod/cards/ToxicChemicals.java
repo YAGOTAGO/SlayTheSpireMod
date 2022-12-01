@@ -20,7 +20,7 @@ public class ToxicChemicals extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(ToxicChemicals.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("ToxicChemicals.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

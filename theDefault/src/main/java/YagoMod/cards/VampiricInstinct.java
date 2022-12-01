@@ -18,7 +18,7 @@ public class VampiricInstinct extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(VampiricInstinct.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("VampiricInstinct.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
