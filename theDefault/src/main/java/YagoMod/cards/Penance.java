@@ -21,7 +21,7 @@ public class Penance extends AbstractDynamicCard {
 
     // TEXT DECLARATION
     public static final String ID = DefaultMod.makeID(Penance.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Penance.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
