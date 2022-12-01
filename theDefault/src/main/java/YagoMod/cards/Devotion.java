@@ -19,7 +19,7 @@ public class Devotion extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(Devotion.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Devotion.png");
 
     // STAT DECLARATION
     private static final CardRarity RARITY = CardRarity.COMMON;

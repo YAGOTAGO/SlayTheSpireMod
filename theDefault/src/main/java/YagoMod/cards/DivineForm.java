@@ -23,7 +23,7 @@ public class DivineForm extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(DivineForm.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("DivineForm.png");
 
 
     // STAT DECLARATION
