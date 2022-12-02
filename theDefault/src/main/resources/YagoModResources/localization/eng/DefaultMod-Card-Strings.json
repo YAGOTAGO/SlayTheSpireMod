@@ -1,4 +1,8 @@
 {
+  "YagoMod:Accusation": {
+    "NAME": "Accusation",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your hand onto the top of your draw pile."
+  },
   "YagoMod:LostLibrary": {
     "NAME": "Lost Library",
     "DESCRIPTION": "Gain Block equal to your hand size.",

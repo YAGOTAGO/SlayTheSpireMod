@@ -36,7 +36,7 @@ public class Inferno extends AbstractDynamicCard {
     private static final int DAMAGE_PLUS= 2;
 
     //Increment is for damage increase this combat
-    private static final int INCREMENT_AMOUNT = 2; //half the amount because its trigerring twice
+    private static final int INCREMENT_AMOUNT = 2;
     public Inferno() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
@@ -50,7 +50,7 @@ public class Inferno extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         //Attack
         AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_FIRE"));
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
 
         //Increment the damage
         AbstractDungeon.actionManager.addToBottom(new InfernoAction(this, this.magicNumber));
@@ -63,9 +63,8 @@ public class Inferno extends AbstractDynamicCard {
 
     public void triggerOnManualDiscard() {
         //Deal damage to all enemies
-        AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new CleaveEffect(), 0.1F));
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_FIRE"));
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
 
         //Increment the damage
         AbstractDungeon.actionManager.addToBottom(new InfernoAction(this, this.magicNumber));
