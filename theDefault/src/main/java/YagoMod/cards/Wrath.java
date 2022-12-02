@@ -1,12 +1,10 @@
 package YagoMod.cards;
 
 import YagoMod.DefaultMod;
-import YagoMod.actions.LifestealAction;
 import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,17 +14,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static YagoMod.DefaultMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
-public class FlagellantWhip extends AbstractDynamicCard {
+public class Wrath extends AbstractDynamicCard {
 
     /**
      * (3) Deal 38(48) damage. Can only be played if you took damage this turn.
      */
 
-
-    public static final String ID = DefaultMod.makeID(FlagellantWhip.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
-
-    // STAT DECLARATION
+    public static final String ID = DefaultMod.makeID(Wrath.class.getSimpleName());
+    public static final String IMG = makeCardPath("Wrath.png");
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
@@ -38,7 +33,7 @@ public class FlagellantWhip extends AbstractDynamicCard {
 
     // /STAT DECLARATION/
 
-    public FlagellantWhip() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
+    public Wrath() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
 
@@ -55,9 +50,8 @@ public class FlagellantWhip extends AbstractDynamicCard {
         return GameActionManager.damageReceivedThisTurn > 0;
     }
 
-
     //used by other methods to add a copy to the hand
-    public AbstractCard makeCopy() {return new FlagellantWhip();}
+    public AbstractCard makeCopy() {return new Wrath();}
 
     // Upgraded stats.
     @Override

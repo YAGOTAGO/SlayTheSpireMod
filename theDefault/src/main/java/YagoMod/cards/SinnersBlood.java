@@ -55,6 +55,15 @@ public class SinnersBlood extends AbstractDynamicCard {
         this.baseDamage = GameActionManager.damageReceivedThisTurn;
     }
 
+    @Override
+    public void atTurnStart() {
+        this.baseDamage = 0;
+    }
+    @Override
+    public void triggerOnEndOfPlayerTurn() {
+        this.baseDamage = 0;
+    }
+
     public AbstractCard makeCopy() {return new SinnersBlood();}
 
     // Upgraded stats.

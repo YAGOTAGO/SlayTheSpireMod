@@ -241,7 +241,7 @@ public class TheDefault extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new BloodGem();
     }
 
     // The class name as it appears next to your player name in-game

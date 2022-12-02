@@ -11,14 +11,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 public class NoCreedAction extends AbstractGameAction {
 
     private AbstractPlayer player;
-
     private int amountCanDiscard;
     public static final String TEXT = "Discard.";
-    public NoCreedAction(int i) {
+    public NoCreedAction(int amountToDiscard) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.player = AbstractDungeon.player;
-        this.amountCanDiscard = i;
+        this.amountCanDiscard =amountToDiscard;
     }
 
     @Override

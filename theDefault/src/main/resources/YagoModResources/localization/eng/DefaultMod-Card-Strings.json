@@ -50,8 +50,8 @@
     "NAME": "Gash",
     "DESCRIPTION": "Unplayable. NL When drawn lose 2 HP. NL Ethereal."
   },
-  "YagoMod:FlagellantWhip": {
-    "NAME": "Flagellant's Whip",
+  "YagoMod:Wrath": {
+    "NAME": "Wrath",
     "DESCRIPTION": "Deal !D! damage. NL Can only be played if you took damage this turn."
   },
   "YagoMod:Repent": {
