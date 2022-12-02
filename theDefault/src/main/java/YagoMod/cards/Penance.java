@@ -2,7 +2,6 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
-import YagoMod.powers.BloodAlchemyPower;
 import YagoMod.powers.PenancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -24,11 +23,6 @@ public class Penance extends AbstractDynamicCard {
     public static final String IMG = makeCardPath("Penance.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-
-    // /TEXT DECLARATION/
-
-    // STAT DECLARATION
-
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
@@ -39,7 +33,6 @@ public class Penance extends AbstractDynamicCard {
     private static final int DRAW_AMOUNT = 1;
     private static final int MAGIC = 1;
 
-    // /STAT DECLARATION/
 
     public Penance() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -18,5 +18,9 @@
         "YagoMod:Penance": {
         "NAME": "Penance",
         "DESCRIPTIONS": ["Whenever you heal draw ", " card.", " cards."]
-}
+},
+        "YagoMod:LastStandPower": {
+                "NAME": "Last Stand",
+                "DESCRIPTIONS": ["Take ", " damage at the start of next turn."]
+        }
 }

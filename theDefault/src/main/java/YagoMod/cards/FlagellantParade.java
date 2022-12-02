@@ -2,13 +2,10 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
-import YagoMod.powers.BloodAlchemyPower;
 import YagoMod.powers.FlagellantParadePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static YagoMod.DefaultMod.makeCardPath;
@@ -19,16 +16,8 @@ public class FlagellantParade extends AbstractDynamicCard {
      * (2) Whenever you lose HP from a card, deal 5(8) damage to a random enemy.
      */
 
-    // TEXT DECLARATION
     public static final String ID = DefaultMod.makeID(FlagellantParade.class.getSimpleName());
     public static final String IMG = makeCardPath("FlagellantParade.png");
-
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-
-    // /TEXT DECLARATION/
-
-    // STAT DECLARATION
-
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;

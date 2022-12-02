@@ -1,4 +1,8 @@
 {
+  "YagoMod:LastStand": {
+    "NAME": "Last Stand",
+    "DESCRIPTION": "Heal !M!. NL At the start of the next turn lose !M! HP."
+  },
   "YagoMod:BloodGem": {
     "NAME": "Blood Gem",
     "DESCRIPTION": "Discard 1 card, NL lose 3 HP, NL gain 1 [E] energy.",
