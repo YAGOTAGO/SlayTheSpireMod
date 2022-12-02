@@ -7,7 +7,6 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,8 +23,8 @@ public class LastStandPower extends AbstractPower implements CloneablePowerInter
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/BloodDrop84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/BloodDrop32.png");
 
     public LastStandPower(final AbstractCreature owner, final AbstractCreature source, int amountOfTimes, int damage){
         name = NAME;
@@ -45,7 +44,6 @@ public class LastStandPower extends AbstractPower implements CloneablePowerInter
 
     public void atStartOfTurn() {
         this.flash();
-
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(this.owner, this.owner, damage));
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
     }

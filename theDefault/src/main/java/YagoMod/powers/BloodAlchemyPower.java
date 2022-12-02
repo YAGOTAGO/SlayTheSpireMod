@@ -25,14 +25,13 @@ public class BloodAlchemyPower extends AbstractPower implements CloneablePowerIn
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/Potion84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/Potion32.png");
 
 
     public BloodAlchemyPower(final AbstractCreature owner, final AbstractCreature source, int hpLoss, int potionAmount){
         name = NAME;
         ID = POWER_ID;
-
         this.hpLoss = hpLoss;
         this.owner = owner;
         this.amount = potionAmount;
@@ -52,8 +51,10 @@ public class BloodAlchemyPower extends AbstractPower implements CloneablePowerIn
     public void atStartOfTurn() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
+
+            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(this.owner, this.owner, this.hpLoss));
+
             for(int i = 0; i < this.amount; ++i) {
-                AbstractDungeon.actionManager.addToBottom(new LoseHPAction(this.owner, this.owner, this.hpLoss));
                 AbstractDungeon.actionManager.addToBottom(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
             }
         }
