@@ -1,4 +1,9 @@
 {
+  "YagoMod:BloodGem": {
+    "NAME": "Blood Gem",
+    "DESCRIPTION": "Discard 1 card, NL lose 3 HP, NL gain 1 [E] energy.",
+    "UPGRADE_DESCRIPTION": "Discard 1 card, NL lose 3 HP, NL gain 1 [E] energy. NL Draw 1 card."
+  },
   "YagoMod:Accusation": {
     "NAME": "Accusation",
     "DESCRIPTION": "Deal !D! damage. NL Put a card from your hand onto the top of your draw pile."
@@ -113,7 +118,7 @@
   },
   "YagoMod:SurrenderFlesh": {
   "NAME": "Surrender Flesh",
-  "DESCRIPTION": "Draw !M! cards. NL Lose 2 max HP."
+  "DESCRIPTION": "Draw !M! cards. NL Lose 4 HP."
 },
   "YagoMod:Oblation": {
   "NAME": "Oblation",
