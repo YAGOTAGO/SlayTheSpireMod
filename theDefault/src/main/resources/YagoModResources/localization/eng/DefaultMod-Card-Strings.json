@@ -1,4 +1,8 @@
 {
+  "YagoMod:PierceTheHeart": {
+    "NAME": "Pierce The Heart",
+    "DESCRIPTION": "Break !M! Block. NL Deal !D! damage."
+  },
   "YagoMod:Indoctrinate": {
     "NAME": "Indoctrinate",
     "DESCRIPTION": "Deal !D! damage. NL Gain that much block next turn."
