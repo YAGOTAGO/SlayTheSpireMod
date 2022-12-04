@@ -1,4 +1,9 @@
 {
+  "YagoMod:BloodyBlade": {
+    "NAME": "Bloody Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Gains damage equal to the damage you took this combat ( !M! ).",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gains damage equal to twice the damage you took this combat ( !M! )."
+  },
   "YagoMod:OrdainedSword": {
     "NAME": "Ordained Sword",
     "DESCRIPTION": "Deal !D! damage. NL yagomod:Lifesteal if below 30% HP."
