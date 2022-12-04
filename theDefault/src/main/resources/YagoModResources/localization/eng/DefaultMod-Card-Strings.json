@@ -1,4 +1,8 @@
 {
+  "YagoMod:CallousBeating": {
+    "NAME": "Callous Beating",
+    "DESCRIPTION": "Deal !D! damage 2 times. NL Shuffle a Gash into your discard pile."
+  },
   "YagoMod:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !M! Block."

@@ -20,7 +20,7 @@ public class Gash extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(Gash.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Gash.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
