@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-
 import static YagoMod.DefaultMod.makeRelicOutlinePath;
 import static YagoMod.DefaultMod.makeRelicPath;
 
@@ -20,7 +19,7 @@ public class Anguish extends CustomRelic {
      */
 
     public static final String ID = DefaultMod.makeID("Anguish");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("AnguishIcon.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
     private static boolean hasBeenApplied = false;
     public Anguish() {

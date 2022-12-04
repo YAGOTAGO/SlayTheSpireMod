@@ -20,7 +20,7 @@ public class SinnersBlood extends AbstractDynamicCard {
      */
 
     public static final String ID = DefaultMod.makeID(SinnersBlood.class.getSimpleName());
-    public static final String IMG = makeCardPath("SinnersBlood.jpg");
+    public static final String IMG = makeCardPath("SinnersBlood.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

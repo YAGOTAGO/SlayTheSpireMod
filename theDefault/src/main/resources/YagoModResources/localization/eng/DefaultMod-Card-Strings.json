@@ -1,4 +1,8 @@
 {
+  "YagoMod:HallowedDagger": {
+    "NAME": "Hallowed Dagger",
+    "DESCRIPTION": "Deal !D! damage 2 times. NL yagomod:Lifesteal if you took damage this turn."
+  },
   "YagoMod:CallousBeating": {
     "NAME": "Callous Beating",
     "DESCRIPTION": "Deal !D! damage 2 times. NL Shuffle a Gash into your discard pile."
