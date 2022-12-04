@@ -1,4 +1,8 @@
 {
+  "YagoMod:Indoctrinate": {
+    "NAME": "Indoctrinate",
+    "DESCRIPTION": "Deal !D! damage. NL Gain that much block next turn."
+  },
   "YagoMod:LastStand": {
     "NAME": "Last Stand",
     "DESCRIPTION": "Heal !M!. NL At the start of the next turn lose !M! HP."
