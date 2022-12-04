@@ -22,5 +22,9 @@
         "YagoMod:LastStandPower": {
                 "NAME": "Last Stand",
                 "DESCRIPTIONS": ["Take ", " damage at the start of next turn."]
+        },
+        "YagoMod:DDamagePower": {
+                "NAME": "Double Damage",
+                "DESCRIPTIONS": ["Deal double damage while below 50% HP."]
         }
 }

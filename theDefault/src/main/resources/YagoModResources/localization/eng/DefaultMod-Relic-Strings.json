@@ -1,4 +1,11 @@
 {
+  "YagoMod:Anguish": {
+    "NAME": "Anguish",
+    "FLAVOR": "What doesn't kill you...",
+    "DESCRIPTIONS": [
+      "Deal double damage when below 50% HP."
+    ]
+  },
   "YagoMod:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",

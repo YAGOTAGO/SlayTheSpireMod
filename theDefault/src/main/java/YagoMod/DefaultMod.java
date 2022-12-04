@@ -1,5 +1,6 @@
 package YagoMod;
 
+import YagoMod.relics.*;
 import YagoMod.status.Gash;
 import basemod.*;
 import basemod.eventUtil.AddEventParams;
@@ -25,10 +26,6 @@ import YagoMod.cards.*;
 import YagoMod.characters.TheDefault;
 import YagoMod.events.IdentityCrisisEvent;
 import YagoMod.potions.PlaceholderPotion;
-import YagoMod.relics.BottledPlaceholderRelic;
-import YagoMod.relics.DefaultClickableRelic;
-import YagoMod.relics.PlaceholderRelic;
-import YagoMod.relics.PlaceholderRelic2;
 import YagoMod.util.IDCheckDontTouchPls;
 import YagoMod.util.TextureLoader;
 import YagoMod.variables.DefaultCustomVariable;
@@ -394,6 +391,7 @@ public class DefaultMod implements
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new Anguish(), TheDefault.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
         
