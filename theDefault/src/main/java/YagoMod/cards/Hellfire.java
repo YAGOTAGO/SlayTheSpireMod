@@ -35,6 +35,7 @@ public class Hellfire extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         isMultiDamage = true;
+
     }
 
     // Actions the card should do.

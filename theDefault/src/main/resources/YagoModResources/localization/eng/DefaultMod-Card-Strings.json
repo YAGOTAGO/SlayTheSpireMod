@@ -1,4 +1,8 @@
 {
+  "YagoMod:OrdainedSword": {
+    "NAME": "Ordained Sword",
+    "DESCRIPTION": "Deal !D! damage. NL yagomod:Lifesteal if below 30% HP."
+  },
   "YagoMod:Hellfire": {
     "NAME": "Hellfire",
     "DESCRIPTION": "Deal !D! damage to all enemies. NL Discard 1 card."

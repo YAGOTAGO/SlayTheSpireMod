@@ -34,6 +34,7 @@ public class HallowedDagger extends AbstractDynamicCard {
     public HallowedDagger() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = DAMAGE;
+        this.tags.add(CardTags.HEALING);
     }
 
     // Actions the card should do.

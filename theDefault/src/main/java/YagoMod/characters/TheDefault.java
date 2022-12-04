@@ -159,7 +159,7 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(Hellfire.ID);
+        retVal.add(OrdainedSword.ID);
         retVal.add(Inferno.ID);
         retVal.add(Devotion.ID);
         retVal.add(Oblation.ID);
