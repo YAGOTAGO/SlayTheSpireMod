@@ -1,4 +1,12 @@
 {
+  "YagoMod:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !M! Block."
+  },
+  "YagoMod:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "YagoMod:PierceTheHeart": {
     "NAME": "Pierce The Heart",
     "DESCRIPTION": "Break !M! Block. NL Deal !D! damage."
