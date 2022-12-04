@@ -1,4 +1,8 @@
 {
+  "YagoMod:Hellfire": {
+    "NAME": "Hellfire",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Discard 1 card."
+  },
   "YagoMod:HallowedDagger": {
     "NAME": "Hallowed Dagger",
     "DESCRIPTION": "Deal !D! damage 2 times. NL yagomod:Lifesteal if you took damage this turn."
