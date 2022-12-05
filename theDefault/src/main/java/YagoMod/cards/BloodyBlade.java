@@ -22,7 +22,7 @@ public class BloodyBlade extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(BloodyBlade.class.getSimpleName());
     public static final String IMG = makeCardPath("BloodyBlade.png");
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
@@ -57,6 +57,7 @@ public class BloodyBlade extends AbstractDynamicCard {
             this.magicNumber = this.baseMagicNumber = GameActionManager.damageReceivedThisCombat;
         }
     }
+
 
     public AbstractCard makeCopy() {return new BloodyBlade();}
 

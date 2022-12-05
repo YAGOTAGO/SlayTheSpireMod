@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
-
 import static YagoMod.DefaultMod.makeCardPath;
 
 
@@ -39,6 +38,7 @@ public class WickedStab extends AbstractDynamicCard {
         this.baseDamage = DAMAGE;
         this.baseMagicNumber = WEAK;
         this.magicNumber = this.baseMagicNumber;
+
     }
 
     @Override

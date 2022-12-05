@@ -16,7 +16,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 public class DesecratingBlow extends AbstractDynamicCard {
 
     /*
-     * (1) Lose 1 hp. Deal 15(20) damage. Increase damage taken by 2;
+     * (1) Lose 1 hp. Deal 14(17) damage. Increase damage taken by 2;
      */
 
     public static final String ID = DefaultMod.makeID(DesecratingBlow.class.getSimpleName());
@@ -28,8 +28,8 @@ public class DesecratingBlow extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int DAMAGE = 14;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int DAMAGE_TAKE = 1;
     private static final int DAMAGE_TAKE_INC = 2;
 

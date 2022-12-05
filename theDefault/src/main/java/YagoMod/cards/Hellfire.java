@@ -28,8 +28,8 @@ public class Hellfire extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 12;
-    private static final int DAMAGE_PLUS= 3;
+    private static final int DAMAGE = 10;
+    private static final int DAMAGE_PLUS= 2;
 
     public Hellfire() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

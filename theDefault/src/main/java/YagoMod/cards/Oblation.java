@@ -13,7 +13,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 public class Oblation extends AbstractDynamicCard {
 
     /*
-     * Unplayable. If this card is discarded from your hand, heal 2(4), draw 1.
+     * Unplayable. If this card is discarded from your hand, heal 1(2), draw 1.
      */
 
     public static final String ID = DefaultMod.makeID(Oblation.class.getSimpleName());
@@ -25,8 +25,8 @@ public class Oblation extends AbstractDynamicCard {
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
     private static final int COST = -2;
-    private static final int UPGRADE_PLUS_HEAL = 2;
-    private static final int HEAL = 2;
+    private static final int UPGRADE_PLUS_HEAL = 1;
+    private static final int HEAL = 1;
     private static final int DRAW = 1;
 
     public Oblation() {
