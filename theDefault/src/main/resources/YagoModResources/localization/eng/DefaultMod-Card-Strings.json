@@ -1,4 +1,8 @@
 {
+  "YagoMod:SacredKnowledge": {
+    "NAME": "Sacred Knowledge",
+    "DESCRIPTION": "Deal !D! damage. NL If the target dies play the top card of your draw pile."
+  },
   "YagoMod:BloodyBlade": {
     "NAME": "Bloody Blade",
     "DESCRIPTION": "Deal !D! damage. NL Gains damage equal to the damage you took this combat ( !M! ).",

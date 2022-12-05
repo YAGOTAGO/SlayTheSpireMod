@@ -17,7 +17,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 
 public class BloodyBlade extends AbstractDynamicCard {
     /*
-     * (2): Deal 12 damage, gains damage equal to twice(thrice) the damage you took this combat.
+     * (2): Deal 12 damage, gains damage equal to (twice) the damage you took this combat.
      */
 
     public static final String ID = DefaultMod.makeID(BloodyBlade.class.getSimpleName());

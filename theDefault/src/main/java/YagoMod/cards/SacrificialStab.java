@@ -21,20 +21,14 @@ public class SacrificialStab extends AbstractDynamicCard {
     public static final String ID = DefaultMod.makeID(SacrificialStab.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
     public static final String IMG = makeCardPath("SacrificialStab.jpg");// "public static final String IMG = makeCardPath("${NAME}.png");
 
-
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
-
     private static final int COST = 2;
     private static final int DAMAGE = 12;
-
     private static final int ENERGY = 2;
-
     private static final int ENERGY_UPGRADE = 1;
-
-    // /STAT DECLARATION/
 
 
     public SacrificialStab() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
@@ -43,7 +37,6 @@ public class SacrificialStab extends AbstractDynamicCard {
         baseMagicNumber = ENERGY;
         magicNumber = baseMagicNumber;
     }
-
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
