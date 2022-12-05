@@ -6,6 +6,7 @@ import YagoMod.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -35,6 +36,7 @@ public class Anguish extends CustomRelic {
     public void atBattleStart() {
         if((float)AbstractDungeon.player.currentHealth < (float)(AbstractDungeon.player.maxHealth * 0.5) && !hasBeenApplied){
             this.flash();
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DDamagePower(AbstractDungeon.player), 1));
             hasBeenApplied = true;
         }
@@ -49,6 +51,7 @@ public class Anguish extends CustomRelic {
     public void onBloodied() {
         if(AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !hasBeenApplied) {
             this.flash();
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DDamagePower(AbstractDungeon.player)));
             hasBeenApplied = true;
         }

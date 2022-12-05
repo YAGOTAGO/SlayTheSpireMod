@@ -3,7 +3,6 @@ package YagoMod.cards;
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,7 +10,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static YagoMod.DefaultMod.makeCardPath;
 
@@ -43,7 +41,6 @@ public class Repent extends AbstractDynamicCard {
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
-
     }
 
     public AbstractCard makeCopy() {return new Repent();}

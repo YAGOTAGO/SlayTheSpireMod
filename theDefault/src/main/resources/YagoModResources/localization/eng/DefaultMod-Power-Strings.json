@@ -26,5 +26,9 @@
         "YagoMod:DDamagePower": {
                 "NAME": "Double Damage",
                 "DESCRIPTIONS": ["Deal double damage while below 50% HP."]
+        },
+        "YagoMod:IndomitableSpiritPower": {
+                "NAME": "Indomitable Spirit",
+                "DESCRIPTIONS": ["At the start of the turn remove all debuffs."]
         }
 }

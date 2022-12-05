@@ -1,4 +1,8 @@
 {
+  "YagoMod:IndomitableSpirit": {
+    "NAME": "Indomitable Spirit",
+    "DESCRIPTION": "At the start of the turn remove all debuffs. NL Exhaust."
+  },
   "YagoMod:SacredKnowledge": {
     "NAME": "Sacred Knowledge",
     "DESCRIPTION": "Deal !D! damage. NL If the target dies play the top card of your draw pile."
