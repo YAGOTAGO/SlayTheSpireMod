@@ -5,7 +5,6 @@ import YagoMod.characters.TheDefault;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,7 +34,6 @@ public class WickedStab extends AbstractDynamicCard {
     private static final int WEAK_PLUS = 1;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-
     public WickedStab() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = DAMAGE;
@@ -43,13 +41,10 @@ public class WickedStab extends AbstractDynamicCard {
         this.magicNumber = this.baseMagicNumber;
     }
 
-
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,p, new WeakPower(m, this.magicNumber,false), this.magicNumber));
-
     }
 
     //used by other methods to add a copy to the hand
