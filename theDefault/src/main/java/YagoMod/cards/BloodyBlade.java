@@ -19,7 +19,6 @@ public class BloodyBlade extends AbstractDynamicCard {
     /*
      * (2): Deal 12 damage, gains damage equal to (twice) the damage you took this combat.
      */
-
     public static final String ID = DefaultMod.makeID(BloodyBlade.class.getSimpleName());
     public static final String IMG = makeCardPath("BloodyBlade.png");
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -30,12 +29,16 @@ public class BloodyBlade extends AbstractDynamicCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 2;
     private static final int DAMAGE = 12;
-    private static final int DAMAGE_TAKEN_COMBAT = 0;
 
     public BloodyBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = DAMAGE;
-        this.baseMagicNumber = DAMAGE_TAKEN_COMBAT;
+
+        if(upgraded){
+            this.baseMagicNumber = GameActionManager.damageReceivedThisCombat * 2;
+        }else{
+            this.baseMagicNumber = GameActionManager.damageReceivedThisCombat;
+        }
         this.magicNumber = this.baseMagicNumber;
     }
 
