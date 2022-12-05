@@ -1,7 +1,12 @@
 {
+  "YagoMod:LostScripture": {
+    "NAME": "Lost Scripture",
+    "DESCRIPTION": "At the start of the turn yagomod:Discover a card from a different color. NL It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "At the start of the turn yagomod:Discover a card from a different color. NL It costs 0 this turn. NL Innate."
+  },
   "YagoMod:IndomitableSpirit": {
     "NAME": "Indomitable Spirit",
-    "DESCRIPTION": "At the start of the turn remove all debuffs. NL Exhaust."
+    "DESCRIPTION": "At the start of the turn remove all debuffs."
   },
   "YagoMod:SacredKnowledge": {
     "NAME": "Sacred Knowledge",

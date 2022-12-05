@@ -27,8 +27,8 @@ public class FlagellantParadePower extends AbstractPower implements CloneablePow
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("YagoModResources/images/powers/FlageParade84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("YagoModResources/images/powers/FlageParade32.png");
 
 
     public FlagellantParadePower(final AbstractCreature owner, final AbstractCreature source, int amountOfTimes, int damage){

@@ -13,7 +13,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 public class FlagellantParade extends AbstractDynamicCard {
 
     /*
-     * (2) Whenever you lose HP from a card, deal 5(8) damage to a random enemy.
+     * (1) Whenever you lose HP from a card, deal 5(8) damage to a random enemy.
      */
 
     public static final String ID = DefaultMod.makeID(FlagellantParade.class.getSimpleName());
@@ -23,7 +23,7 @@ public class FlagellantParade extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE = 5;
     private static final int DAMAGE_UPGRADE = 3;
     private static final int MAGIC = 1;

@@ -32,7 +32,6 @@ public class IndomitableSpiritPower extends AbstractPower implements CloneablePo
 
         type = PowerType.BUFF;
         isTurnBased = true;
-        this.priority = 10;
 
         // We load those textures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);

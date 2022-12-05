@@ -40,7 +40,9 @@ public class DevotionAction extends AbstractGameAction {
                     c.triggerOnManualDiscard();
                 }
                 //heal for amount of cards dicarded
-                AbstractDungeon.actionManager.addToBottom(new HealAction(player, player, AbstractDungeon.handCardSelectScreen.selectedCards.group.size()));
+                for(int i = 0; i<AbstractDungeon.handCardSelectScreen.selectedCards.group.size(); i++){
+                    AbstractDungeon.actionManager.addToBottom(new HealAction(player, player, 1));
+                }
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
         }
