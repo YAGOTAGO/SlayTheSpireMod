@@ -1,4 +1,4 @@
-# Slay the Spire Character Mod
+# New Slay the Spire Character
 
 ## Objective
 To make a fully playable class in Slay the Spire with 75 new cards. <br />
