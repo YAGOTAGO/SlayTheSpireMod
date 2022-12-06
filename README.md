@@ -4,10 +4,11 @@
 To make a fully playable class in Slay the Spire with 75 new cards. <br />
 Currently have 49 cards done.
 
-## Coding
-All coding is done with Java, using the help of the:
-BaseMod:
-STSLib:
+## Requirements
+* Slay the Spire
+* ModTheSpire (https://github.com/t-larson/ModTheSpire/releases)
+* BaseMod (https://github.com/daviscook477/BaseMod/releases)
+* Java 8+
 
 ## Card List
 https://github.com/YAGOTAGO/SlayTheSpireMod/wiki/Card-List
