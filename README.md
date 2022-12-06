@@ -13,15 +13,26 @@ Currently have 49 cards done.
 ## Card List
 https://github.com/YAGOTAGO/SlayTheSpireMod/wiki/Card-List
 
-## Mechanincs
+## Mechanics
 
-Character Relic: (Anguish) Deal double damage when below 50% HP.
+### Character Starter Relic
+$\color[RGB]{139,0,0} Anguish$: Deal double damage when below 50% HP. <br />
 
-Lifesteal: Heal for unblocked damage dealt by this card. <br />
+### Keywords
+$\color[RGB]{255,255,0} Lifesteal$: Heal for unblocked damage dealt by this card. <br />
+$\color[RGB]{255,255,0} Discover$: Choose 1 of 3 random cards to add to your hand. Will not show healing cards. <br />
+
+### Playstyle
 Self-inflicted damage and max HP loss. <br />
-Character will play as a risk reward between losing HP to be more powerful and gaining health to stay alive. <br />
+Risk reward between losing HP to be more powerful and gaining health to stay alive. <br />
+Uses cards from all other colors (through discovering).
+
 
 ## Art
 All art was done by AI. <br />
 Predominantly using Dall E: https://openai.com/dall-e-2/
+### Theme
+The theme was inspired by Darkest Dungeon's Flagellant character. <br /> 
+There is dark and bloody theme with religious phrasing and imagery. <br />
+Ideally the character should feel like self punishment is the way to get stronger.
 
