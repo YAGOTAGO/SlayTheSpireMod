@@ -1,8 +1,16 @@
 # Slay the Spire Character Mod
 
-Work in progress that will feature a new character class with 75 new cards.
+## Objective
+To make a fully playable class in Slay the Spire with 75 new cards. <br />
+Currently have 49 cards done.
 
+## Coding
+All coding is done with Java, using the help of the:
+BaseMod:
+STSLib:
 
+## Card List
+https://github.com/YAGOTAGO/SlayTheSpireMod/wiki/Card-List
 
 ## Mechanincs
 
