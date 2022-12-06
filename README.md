@@ -2,7 +2,8 @@
 
 ## Objective
 To make a fully playable class in Slay the Spire with 75 new cards. <br />
-Currently have 49 cards done.
+Currently have 49 cards done. <br />
+Hopefully will publish to the Steam Workshop within a month for everyone to be able to play. <br />
 
 ## Requirements
 * Slay the Spire
