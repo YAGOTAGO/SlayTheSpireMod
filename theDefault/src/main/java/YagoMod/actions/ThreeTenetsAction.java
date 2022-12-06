@@ -31,11 +31,11 @@ public class ThreeTenetsAction extends AbstractGameAction {
             logger.info("Last played card type is: "+cardType);
             logger.info("Last played card: "+AbstractDungeon.actionManager.cardsPlayedThisTurn.get(AbstractDungeon.actionManager.cardsPlayedThisTurn.size() - 2).name);
             if(cardType == AbstractCard.CardType.ATTACK){
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.RED, upgraded));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.RED, upgraded, false));
             } else if (cardType == AbstractCard.CardType.SKILL) {
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.GREEN, upgraded));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.GREEN, upgraded, false));
             }else if (cardType == AbstractCard.CardType.POWER) {
-                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.BLUE, upgraded));
+                AbstractDungeon.actionManager.addToBottom(new DiscoverAction(AbstractCard.CardColor.BLUE, upgraded, false));
             }
         }
         this.isDone = true;

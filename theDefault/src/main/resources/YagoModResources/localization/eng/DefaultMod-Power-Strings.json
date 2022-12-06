@@ -33,6 +33,6 @@
         },
         "YagoMod:LostScripturePower": {
                 "NAME": "Lost Scripture",
-                "DESCRIPTIONS": ["At the start of your turn Discover a card from a different color. It costs 0 this turn."]
+                "DESCRIPTIONS": ["At the start of your turn Discover a card from a different color. It costs 1 less this turn."]
         }
 }

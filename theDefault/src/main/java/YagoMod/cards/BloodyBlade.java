@@ -61,6 +61,10 @@ public class BloodyBlade extends AbstractDynamicCard {
         }
     }
 
+    @Override
+    public void triggerOnEndOfPlayerTurn() {
+        this.magicNumber = this.baseMagicNumber = 0;
+    }
 
     public AbstractCard makeCopy() {return new BloodyBlade();}
 

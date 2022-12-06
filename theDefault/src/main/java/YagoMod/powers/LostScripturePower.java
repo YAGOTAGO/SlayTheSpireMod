@@ -44,23 +44,23 @@ public class LostScripturePower extends AbstractPower implements CloneablePowerI
         updateDescription();
     }
 
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         this.flash();
 
         Random rand = new Random();
-        int randInt = rand.nextInt(4);
         AbstractCard.CardColor cardCol = AbstractCard.CardColor.RED;
 
-        switch (randInt){
-            case 0: cardCol = AbstractCard.CardColor.BLUE; break;
-            case 1: cardCol = AbstractCard.CardColor.GREEN; break;
-            case 2: cardCol = AbstractCard.CardColor.RED; break;
-            case 3: cardCol = AbstractCard.CardColor.PURPLE; break;
-            default: break;
-        }
-
         for(int i =0; i<this.amount; i++){
-            AbstractDungeon.actionManager.addToBottom(new DiscoverAction(cardCol, true));
+            int randInt = rand.nextInt(4);
+
+            switch (randInt){
+                case 0: cardCol = AbstractCard.CardColor.BLUE; break;
+                case 1: cardCol = AbstractCard.CardColor.GREEN; break;
+                case 2: cardCol = AbstractCard.CardColor.RED; break;
+                case 3: cardCol = AbstractCard.CardColor.PURPLE; break;
+                default: break;
+            }
+            AbstractDungeon.actionManager.addToBottom(new DiscoverAction(cardCol, false, true));
         }
     }
 

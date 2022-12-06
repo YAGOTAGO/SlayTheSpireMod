@@ -1,8 +1,8 @@
 {
   "YagoMod:LostScripture": {
     "NAME": "Lost Scripture",
-    "DESCRIPTION": "At the start of the turn yagomod:Discover a card from a different color. NL It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "At the start of the turn yagomod:Discover a card from a different color. NL It costs 0 this turn. NL Innate."
+    "DESCRIPTION": "At the start of the turn yagomod:Discover cards from a different color. NL It costs 1 less this turn.",
+    "UPGRADE_DESCRIPTION": "At the start of the turn yagomod:Discover cards from a different color. NL It costs 1 less this turn. NL Innate."
   },
   "YagoMod:IndomitableSpirit": {
     "NAME": "Indomitable Spirit",
@@ -14,8 +14,8 @@
   },
   "YagoMod:BloodyBlade": {
     "NAME": "Bloody Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Gains damage equal to the damage you took this combat ( !M! ).",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gains damage equal to twice the damage you took this combat ( !M! )."
+    "DESCRIPTION": "Deal !D! damage, NL plus damage equal to the damage you took this combat ( !M! ).",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, NL plus damage equal to twice the damage you took this combat ( !M! )."
   },
   "YagoMod:OrdainedSword": {
     "NAME": "Ordained Sword",

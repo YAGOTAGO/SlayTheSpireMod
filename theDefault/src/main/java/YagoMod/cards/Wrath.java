@@ -47,7 +47,7 @@ public class Wrath extends AbstractDynamicCard {
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         this.cantUseMessage = "Must take damage before playing this card.";
-        return GameActionManager.damageReceivedThisTurn > 0;
+        return GameActionManager.damageReceivedThisTurn > 0 && p.energy.energy >= this.cost;
     }
 
     //used by other methods to add a copy to the hand

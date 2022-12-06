@@ -20,7 +20,7 @@ public class HallowedLight extends AbstractDynamicCard {
     public static final String IMG = makeCardPath("HallowedLight.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
@@ -32,14 +32,11 @@ public class HallowedLight extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
     }
+
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
-        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new StunMonsterAction(mo, p, STUN_AMOUNT));
-        }
-
+        AbstractDungeon.actionManager.addToBottom(new StunMonsterAction(m, p, STUN_AMOUNT));
     }
 
     //Upgraded stats.

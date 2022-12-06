@@ -20,13 +20,16 @@ import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.cardRandomRng;
 public class DiscoverAction extends AbstractGameAction {
     private boolean retrieveCard = false;
     private ArrayList<AbstractCard> cardOptions;
-    private boolean upgraded;
-    public DiscoverAction(AbstractCard.CardColor cardColor, boolean upgraded) {
+    private boolean Costs0turn;
+    private boolean Costs1LessTurn;
+    public DiscoverAction(AbstractCard.CardColor cardColor, boolean Cost0thisturn, boolean costs1LessTurn) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.amount = 1;
-        this.upgraded = upgraded;
 
+        //whether to make the card cost 0 this turn
+        this.Costs0turn = Cost0thisturn;
+        this.Costs1LessTurn = costs1LessTurn;
         //Add all cards from that color to card pool
         ArrayList<AbstractCard> cardPool = new ArrayList();
         CardLibrary.addCardsIntoPool(cardPool, cardColor);
@@ -50,10 +53,13 @@ public class DiscoverAction extends AbstractGameAction {
                     }
 
                     //if upgraded sets cost to 0 this turn
-                    if(upgraded){
+                    if(Costs0turn){
                         disCard.setCostForTurn(0);
+                    } else if (Costs1LessTurn) {
+                        if(disCard.cost>0){
+                            disCard.setCostForTurn(disCard.cost-1);
+                        }
                     }
-
 
                     disCard.current_x = -1000.0F * Settings.xScale;
 

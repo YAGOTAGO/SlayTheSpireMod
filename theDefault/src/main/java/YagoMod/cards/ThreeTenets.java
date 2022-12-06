@@ -41,7 +41,6 @@ public class ThreeTenets extends AbstractDynamicCard {
     }
 
 
-
     //will glow after a card is played
     public void triggerOnGlowCheck() {
 
