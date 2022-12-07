@@ -34,5 +34,9 @@
         "YagoMod:LostScripturePower": {
                 "NAME": "Lost Scripture",
                 "DESCRIPTIONS": ["At the start of your turn Discover a card from a different color. It costs 1 less this turn."]
+        },
+        "YagoMod:HolyWaterPower": {
+                "NAME": "Holy Water",
+                "DESCRIPTIONS": ["Whenever you play a skill this turn heal ", "."]
         }
 }

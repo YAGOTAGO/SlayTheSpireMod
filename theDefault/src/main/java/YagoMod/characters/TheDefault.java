@@ -159,8 +159,8 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
+        retVal.add(HolyWater.ID);
+        retVal.add(HolyWater.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
 

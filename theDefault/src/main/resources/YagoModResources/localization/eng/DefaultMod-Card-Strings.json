@@ -1,4 +1,8 @@
 {
+  "YagoMod:HolyWater": {
+    "NAME": "Holy Water",
+    "DESCRIPTION": "Whenever you play a skill this turn heal 1."
+  },
   "YagoMod:LostScripture": {
     "NAME": "Lost Scripture",
     "DESCRIPTION": "At the start of the turn yagomod:Discover cards from a different color. NL It costs 1 less this turn.",
