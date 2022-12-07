@@ -1,4 +1,16 @@
 {
+  "YagoMod:BrokenWill": {
+    "NAME": "Broken Will",
+    "DESCRIPTION": "Randomly spread !M! Weak between enemies."
+  },
+  "YagoMod:BendTheKnee": {
+    "NAME": "Bend The Knee",
+    "DESCRIPTION": "Randomly spread !M! Vulnerable between enemies."
+  },
+  "YagoMod:RainOfTerror": {
+    "NAME": "Rain Of Terror",
+    "DESCRIPTION": "Choose One: randomly spread !M! Vulnerable between enemies, or randomly spread !M! Weak between enemies."
+  },
   "YagoMod:HolyWater": {
     "NAME": "Holy Water",
     "DESCRIPTION": "Whenever you play a skill this turn heal 1."
