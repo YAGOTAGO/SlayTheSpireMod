@@ -1,4 +1,8 @@
 {
+  "YagoMod:BloodRitual": {
+    "NAME": "Blood Ritual",
+    "DESCRIPTION": "Deal !D! damage, NL gains !M! damage when drawn or discarded. NL Exhaust."
+  },
   "YagoMod:Omnipotence": {
     "NAME": "Omnipotence",
     "DESCRIPTION": "Chose a color to yagomod:Discover a card from.",
