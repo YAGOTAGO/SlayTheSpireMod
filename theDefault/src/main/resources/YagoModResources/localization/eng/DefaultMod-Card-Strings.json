@@ -1,4 +1,29 @@
 {
+  "YagoMod:Omnipotence": {
+    "NAME": "Omnipotence",
+    "DESCRIPTION": "Chose a color to yagomod:Discover a card from.",
+    "UPGRADE_DESCRIPTION": "Chose a color to yagomod:Discover a card from. NL It costs 1 less this turn."
+  },
+  "YagoMod:Defect": {
+    "NAME": "Defect",
+    "DESCRIPTION": "yagomod:Discover [#ADD8E6]BLUE[] cards.",
+    "UPGRADE_DESCRIPTION": "yagomod:Discover [#ADD8E6]BLUE[] cards. NL It costs 1 less this turn."
+  },
+  "YagoMod:Watcher": {
+    "NAME": "Watcher",
+    "DESCRIPTION": "yagomod:Discover [#B24BF3]PURPLE[] cards.",
+    "UPGRADE_DESCRIPTION": "yagomod:Discover [#B24BF3]PURPLE[] cards. NL It costs 1 less this turn."
+  },
+  "YagoMod:Silent": {
+    "NAME": "Silent",
+    "DESCRIPTION": "yagomod:Discover [#00FF00]GREEN[] cards.",
+    "UPGRADE_DESCRIPTION": "yagomod:Discover [#00FF00]GREEN[] cards. NL It costs 1 less this turn."
+  },
+  "YagoMod:Ironclad": {
+    "NAME": "Ironclad",
+    "DESCRIPTION": "yagomod:Discover [#FF0000]RED[] cards.",
+    "UPGRADE_DESCRIPTION": "yagomod:Discover [#FF0000]RED[] cards. NL It costs 1 less this turn."
+  },
   "YagoMod:BrokenWill": {
     "NAME": "Broken Will",
     "DESCRIPTION": "Randomly spread !M! Weak between enemies."
@@ -9,7 +34,7 @@
   },
   "YagoMod:RainOfTerror": {
     "NAME": "Rain Of Terror",
-    "DESCRIPTION": "Choose One: randomly spread !M! Vulnerable between enemies, or randomly spread !M! Weak between enemies."
+    "DESCRIPTION": "Choose One: randomly spread !M! Vulnerable or !M! Weak between enemies."
   },
   "YagoMod:HolyWater": {
     "NAME": "Holy Water",

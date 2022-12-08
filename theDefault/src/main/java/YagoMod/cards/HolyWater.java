@@ -31,6 +31,7 @@ public class HolyWater extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = HEAL_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTags.HEALING);
     }
 
     // Actions the card should do.

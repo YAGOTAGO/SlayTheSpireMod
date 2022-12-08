@@ -1,6 +1,7 @@
-package YagoMod.cards;
+package YagoMod.status;
 
 import YagoMod.DefaultMod;
+import YagoMod.cards.AbstractDynamicCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

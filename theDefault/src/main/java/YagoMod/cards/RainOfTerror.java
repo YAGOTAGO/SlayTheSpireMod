@@ -2,14 +2,14 @@ package YagoMod.cards;
 
 import YagoMod.DefaultMod;
 import YagoMod.characters.TheDefault;
+import YagoMod.status.BendTheKnee;
+import YagoMod.status.BrokenWill;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-
 
 import static YagoMod.DefaultMod.makeCardPath;
 
@@ -44,10 +44,8 @@ public class RainOfTerror extends AbstractDynamicCard {
         choices.add(new BrokenWill());
 
         if (this.upgraded) {
-            Iterator var4 = choices.iterator();
 
-            while(var4.hasNext()) {
-                AbstractCard c = (AbstractCard)var4.next();
+            for (AbstractCard c : choices) {
                 c.upgrade();
             }
         }
