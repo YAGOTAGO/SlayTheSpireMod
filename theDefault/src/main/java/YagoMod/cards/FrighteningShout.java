@@ -18,7 +18,7 @@ public class FrighteningShout extends AbstractDynamicCard {
 
     /*
      * SKILL:
-     * (1) Apply 1 weak to an enemy. Gain 5(8) block.
+     * (1) Apply 1 weak to an enemy. Gain 6(9) block.
      */
 
     public static final String ID = DefaultMod.makeID(FrighteningShout.class.getSimpleName());
@@ -29,7 +29,7 @@ public class FrighteningShout extends AbstractDynamicCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
-    private static final int BLOCK = 5;
+    private static final int BLOCK = 6;
     private static final int BLOCK_PLUS = 3;
     private static final int WEAK = 1;
     private static final int COST = 1;

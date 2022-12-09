@@ -201,7 +201,7 @@
   },
   "YagoMod:HallowedLight": {
     "NAME": "Hallowed Light",
-    "DESCRIPTION": "yagomod:Stun ALL monsters. NL Exhaust."
+    "DESCRIPTION": "yagomod:Stun a monster. NL Exhaust."
   },
   "YagoMod:EmbraceThorns": {
     "NAME": "Embrace Thorns",
@@ -243,7 +243,7 @@
   },
   "YagoMod:BloodAlchemy": {
     "NAME": "Blood Alchemy",
-    "DESCRIPTION": "At the start of your turn, take !M! damage and gain a random potion."
+    "DESCRIPTION": "At the start of your turn, lose !M! HP and gain a random potion."
   },
   "YagoMod:WickedStab": {
     "NAME": "Wicked Stab",
