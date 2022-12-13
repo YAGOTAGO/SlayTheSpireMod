@@ -38,5 +38,9 @@
         "YagoMod:HolyWaterPower": {
                 "NAME": "Holy Water",
                 "DESCRIPTIONS": ["Whenever you play a skill this turn heal ", "."]
+        },
+        "YagoMod:SongOfGloryPower": {
+                "NAME": "Song of Glory",
+                "DESCRIPTIONS": ["This turn the next ", " card ", " cards ", "is played twice.", "are played twice."]
         }
 }

@@ -17,7 +17,7 @@ public class NoCreedAction extends AbstractGameAction {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.CARD_MANIPULATION;
         this.player = AbstractDungeon.player;
-        this.amountCanDiscard =amountToDiscard;
+        this.amountCanDiscard = amountToDiscard;
     }
 
     @Override

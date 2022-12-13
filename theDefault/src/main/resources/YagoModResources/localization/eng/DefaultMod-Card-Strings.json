@@ -1,7 +1,12 @@
 {
+  "YagoMod:SongOfGlory": {
+    "NAME": "Song Of Glory",
+    "DESCRIPTION": "This turn your next !M! card not from your color is played twice.",
+    "UPGRADE_DESCRIPTION": "This turn your next !M! cards not from your color are played twice."
+  },
   "YagoMod:BloodRitual": {
     "NAME": "Blood Ritual",
-    "DESCRIPTION": "Deal !D! damage, NL gains !M! damage when drawn or discarded. NL Exhaust."
+    "DESCRIPTION": "yagomod:Lifesteal !D!, NL gains !M! damage when drawn or discarded. NL Exhaust."
   },
   "YagoMod:Omnipotence": {
     "NAME": "Omnipotence",

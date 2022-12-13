@@ -11,6 +11,7 @@ import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.green.Neutralize;
 import com.megacrit.cardcrawl.cards.red.Offering;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -159,15 +160,15 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(ToxicChemicals.ID);
-        retVal.add(Strike.ID);
+        retVal.add(SongOfGlory.ID);
+        retVal.add(SongOfGlory.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
 
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+        retVal.add(Neutralize.ID);
+        retVal.add(Neutralize.ID);
+        //retVal.add(Defend.ID);
+        //retVal.add(Defend.ID);
 
         retVal.add(RighteousCause.ID);
 

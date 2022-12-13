@@ -15,7 +15,7 @@ import static YagoMod.DefaultMod.makeCardPath;
 
 public class BloodRitual extends AbstractDynamicCard {
     /*
-     * (1): Deal 0 damage, gains 2(3) damage when drawn or discarded. Lifesteal. Exhaust.
+     * (1): Lifesteal 0, gains 2(3) damage when drawn or discarded. Lifesteal. Exhaust.
      */
 
     public static final String ID = DefaultMod.makeID(BloodRitual.class.getSimpleName());
