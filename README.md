@@ -11,7 +11,7 @@ All coding was done by [Tiago Davies](https://github.com/YAGOTAGO). <br />
 If you would like to make your own mod, or add on to this one check out this [guide](https://github.com/Gremious/StS-DefaultModBase/wiki). <br />
 
 ## Card List
-https://github.com/YAGOTAGO/SlayTheSpireMod/wiki/Card-List
+[Card List Here](https://github.com/YAGOTAGO/SlayTheSpireMod/wiki/Card-List)
 
 ## Mechanics
 
