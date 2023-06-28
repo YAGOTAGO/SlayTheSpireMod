@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class PainPower extends AbstractPower implements CloneablePowerInterface {
 
     private AbstractCreature source;
-    private int amountOfPain = 1;
 
     public static final String POWER_ID = DefaultMod.makeID("PainPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
@@ -31,6 +30,7 @@ public class PainPower extends AbstractPower implements CloneablePowerInterface 
         this.source = source;
         type = PowerType.BUFF;
         isTurnBased = false;
+        this.amount = 1;
 
         // We load those textures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -41,13 +41,13 @@ public class PainPower extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void updateDescription() {
-        description = amountOfPain + DESCRIPTIONS[0];
+        description = amount + DESCRIPTIONS[0];
     }
 
     @Override
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
-        this.amountOfPain += stackAmount;
+        this.amount += stackAmount;
     }
 
     @Override

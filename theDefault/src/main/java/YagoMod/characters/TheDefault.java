@@ -171,7 +171,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
 
-        retVal.add(RighteousCause.ID);
+        retVal.add(Resurgence.ID);
 
 //        retVal.add(WickedStab.ID);
 //        retVal.add(Inferno.ID);
@@ -184,7 +184,7 @@ public class TheDefault extends CustomPlayer {
 //        retVal.add(SelfReflection.ID);
 //        retVal.add(RighteousCause.ID);
 //        retVal.add(LastStand.ID);
-//        retVal.add(Offering.ID);
+        retVal.add(Offering.ID);
        retVal.add(Offering.ID);
 
         return retVal;

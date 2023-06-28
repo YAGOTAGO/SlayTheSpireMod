@@ -312,5 +312,9 @@
   "YagoMod:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "YagoMod:Resurgence": {
+    "NAME": "Resurgence",
+    "DESCRIPTION": "Spend ALL your pain, gain that much Strength."
   }
 }
