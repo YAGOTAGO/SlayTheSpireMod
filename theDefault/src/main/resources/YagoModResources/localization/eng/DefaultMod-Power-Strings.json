@@ -11,6 +11,10 @@
                 "NAME": "Blood Alchemy",
                 "DESCRIPTIONS": ["At the start of your turn, take ", " damage and obtain ", " potion.", " potions."]
         },
+        "YagoMod:PainPower": {
+        "NAME": "Pain",
+        "DESCRIPTIONS": [" stacks of pain."]
+},
         "YagoMod:FlagellantParadePower": {
                 "NAME": "Flagellant Parade",
                 "DESCRIPTIONS": ["Whenever you lose HP from a card deal ", " damage to ", " random enemy.", " random enemies."]

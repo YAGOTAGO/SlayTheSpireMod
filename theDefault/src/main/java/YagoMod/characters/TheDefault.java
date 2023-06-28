@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.relics.RunicCube;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -69,7 +70,7 @@ public class TheDefault extends CustomPlayer {
     public static final int MAX_HP = 75;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
-    public static final int ORB_SLOTS = 3;
+    public static final int ORB_SLOTS = 0;
 
     // =============== /BASE STATS/ =================
 
@@ -160,15 +161,15 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(SongOfGlory.ID);
-        retVal.add(SongOfGlory.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
 
-        retVal.add(Neutralize.ID);
-        retVal.add(Neutralize.ID);
-        //retVal.add(Defend.ID);
-        //retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
 
         retVal.add(RighteousCause.ID);
 
@@ -184,7 +185,7 @@ public class TheDefault extends CustomPlayer {
 //        retVal.add(RighteousCause.ID);
 //        retVal.add(LastStand.ID);
 //        retVal.add(Offering.ID);
-//        retVal.add(Offering.ID);
+       retVal.add(Offering.ID);
 
         return retVal;
     }

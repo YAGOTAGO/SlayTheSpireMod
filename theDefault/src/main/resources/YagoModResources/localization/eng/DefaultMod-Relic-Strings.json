@@ -3,7 +3,7 @@
     "NAME": "Anguish",
     "FLAVOR": "What doesn't kill you...",
     "DESCRIPTIONS": [
-      "Deal double damage when below 50% HP."
+      "Whenever you take damage from cards, gain a stack of pain."
     ]
   },
   "YagoMod:PlaceholderRelic": {
