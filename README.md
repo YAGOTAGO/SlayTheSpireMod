@@ -32,11 +32,6 @@ Uses cards from all other colors (through discovering).
 All art was done by AI. <br />
 Predominantly using [Dall E](https://openai.com/dall-e-2/).
 
-## Theme
-The theme was inspired by [Darkest Dungeon's Flagellant character.](https://darkestdungeon.fandom.com/wiki/Flagellant) <br /> 
-There is dark and bloody theme with religious phrasing and imagery. <br />
-Ideally the character should feel like self punishment is the way to get stronger.
-
 ## Requirements
 * [Slay the Spire](https://store.steampowered.com/app/646570/Slay_the_Spire/)
 * [ModTheSpire](https://github.com/t-larson/ModTheSpire/releases)
